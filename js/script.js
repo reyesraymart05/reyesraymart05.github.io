@@ -41,10 +41,12 @@ function scrollToSection(sectionId) {
 }
 
 // Mobile menu toggle
-document.getElementById("mobile-menu-btn").addEventListener("click", function () {
-  const mobileMenu = document.getElementById("mobile-menu");
-  mobileMenu.classList.toggle("hidden");
-});
+document
+  .getElementById("mobile-menu-btn")
+  .addEventListener("click", function () {
+    const mobileMenu = document.getElementById("mobile-menu");
+    mobileMenu.classList.toggle("hidden");
+  });
 
 // Navigation link clicks
 document.querySelectorAll(".nav-link, #mobile-menu a").forEach((link) => {
@@ -153,27 +155,29 @@ document.addEventListener("keydown", function (e) {
 });
 
 // Contact form submission
-document.getElementById("contact-form").addEventListener("submit", function (e) {
-  e.preventDefault();
+document
+  .getElementById("contact-form")
+  .addEventListener("submit", function (e) {
+    e.preventDefault();
 
-  const name = document.getElementById("name").value;
-  const email = document.getElementById("email").value;
-  const subject = document.getElementById("subject").value;
-  const message = document.getElementById("message").value;
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const subject = document.getElementById("subject").value;
+    const message = document.getElementById("message").value;
 
-  emailjs
-    .send("service_hcy3326", "template_rslnsqu", {
-      name: name,
-      email: email,
-      subject: subject,
-      message: message,
-    })
-    .then(() => {
-      alert("Message sent! ✅");
-      form.reset();
-    });
-  this.reset();
-});
+    emailjs
+      .send("service_hcy3326", "template_rslnsqu", {
+        name: name,
+        email: email,
+        subject: subject,
+        message: message,
+      })
+      .then(() => {
+        alert("Message sent! ✅");
+        form.reset();
+      });
+    this.reset();
+  });
 
 // Back to top button functionality
 const backToTopBtn = document.getElementById("back-to-top");
@@ -199,7 +203,15 @@ window.addEventListener("scroll", function () {
   toggleBackToTopBtn();
 
   // Navigation highlighting
-  const sections = ["home", "about", "skills", "experience", "education", "projects", "contact"];
+  const sections = [
+    "home",
+    "about",
+    "skills",
+    "experience",
+    "education",
+    "projects",
+    "contact",
+  ];
   const navLinks = document.querySelectorAll(".nav-link");
 
   let current = "";
@@ -227,7 +239,7 @@ window.addEventListener("scroll", function () {
     if (b) {
       var d = b.createElement("script");
       d.innerHTML =
-        "window.__CF$cv$params={r:'97cac4e7d6d8c4cb',t:'MTc1NzQ2MzcyNy4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";
+        "window.__CF$cv$params={r:'97cac4e7d6d8c4cb',t:'MTc1NzQ2MzcyNy4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/script.js';document.getElementsByTagName('head')[0].appendChild(a);";
       b.getElementsByTagName("head")[0].appendChild(d);
     }
   }
@@ -242,12 +254,14 @@ window.addEventListener("scroll", function () {
     a.style.visibility = "hidden";
     document.body.appendChild(a);
     if ("loading" !== document.readyState) c();
-    else if (window.addEventListener) document.addEventListener("DOMContentLoaded", c);
+    else if (window.addEventListener)
+      document.addEventListener("DOMContentLoaded", c);
     else {
       var e = document.onreadystatechange || function () {};
       document.onreadystatechange = function (b) {
         e(b);
-        "loading" !== document.readyState && ((document.onreadystatechange = e), c());
+        "loading" !== document.readyState &&
+          ((document.onreadystatechange = e), c());
       };
     }
   }
