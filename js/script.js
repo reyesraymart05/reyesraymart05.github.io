@@ -114,7 +114,7 @@ function viewCode(projectName) {
 }
 
 // Resume modal functions
-function downloadResume() {
+function viewResume() {
   openResumeModal();
 }
 
@@ -130,7 +130,7 @@ function closeResumeModal() {
   document.body.style.overflow = "auto"; // Restore scrolling
 }
 
-function downloadResumePDF() {
+function downloadResume() {
   const pdfPath = "assets/Raymart_Reyes_Resume.pdf";
   const link = document.createElement("a");
   link.href = pdfPath;
