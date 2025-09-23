@@ -1,666 +1,629 @@
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="author" content="Raymart Reyes">
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio - Full Stack Developer &amp; IT Systems Administrator</title>
-    <!-- Link to external CSS file -->
-    <link rel="stylesheet" href="css/style.css" />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-  </head>
-  <body class="bg-gray-50">
-    <!-- Navigation -->
-    <nav class="fixed top-0 w-full bg-white/90 backdrop-blur-sm z-50 shadow-sm">
-      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex justify-between items-center py-4">
-          <div class="text-2xl font-bold text-gray-800">RAYMART REYES</div>
-          <div class="hidden md:flex space-x-8">
-            <a
-              href="#home"
-              class="nav-link text-gray-600 hover:text-gray-900 transition-colors"
-              >Home</a
-            >
-            <a
-              href="#about"
-              class="nav-link text-gray-600 hover:text-gray-900 transition-colors"
-              >About</a
-            >
-            <a
-              href="#skills"
-              class="nav-link text-gray-600 hover:text-gray-900 transition-colors"
-              >Skills</a
-            >
-            <a
-              href="#experience"
-              class="nav-link text-gray-600 hover:text-gray-900 transition-colors"
-              >Experience</a
-            >
-            <a
-              href="#education"
-              class="nav-link text-gray-600 hover:text-gray-900 transition-colors"
-              >Education</a
-            >
-            <a
-              href="#projects"
-              class="nav-link text-gray-600 hover:text-gray-900 transition-colors"
-              >Projects</a
-            >
-            <a
-              href="#contact"
-              class="nav-link text-gray-600 hover:text-gray-900 transition-colors"
-              >Contact</a
-            >
-          </div>
-          <button
-            id="mobile-menu-btn"
-            class="md:hidden text-gray-600">
-            <svg
-              class="w-6 h-6"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24">
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M4 6h16M4 12h16M4 18h16"></path>
-            </svg>
-          </button>
-        </div>
-      </div>
-      <!-- Mobile Menu -->
-      <div
-        id="mobile-menu"
-        class="hidden md:hidden bg-white border-t">
-        <div class="px-4 py-2 space-y-2">
-          <a
-            href="#home"
-            class="block py-2 text-gray-600 hover:text-gray-900"
-            >Home</a
-          >
-          <a
-            href="#about"
-            class="block py-2 text-gray-600 hover:text-gray-900"
-            >About</a
-          >
-          <a
-            href="#skills"
-            class="block py-2 text-gray-600 hover:text-gray-900"
-            >Skills</a
-          >
-          <a
-            href="#experience"
-            class="block py-2 text-gray-600 hover:text-gray-900"
-            >Experience</a
-          >
-          <a
-            href="#education"
-            class="block py-2 text-gray-600 hover:text-gray-900"
-            >Education</a
-          >
-          <a
-            href="#projects"
-            class="block py-2 text-gray-600 hover:text-gray-900"
-            >Projects</a
-          >
-          <a
-            href="#contact"
-            class="block py-2 text-gray-600 hover:text-gray-900"
-            >Contact</a
-          >
-        </div>
-      </div>
-    </nav>
 
-    <!-- Hero Section -->
-    <section
-      id="home"
-      class="min-h-screen bg-gradient-to-br from-blue-900 via-blue-700 to-blue-400 flex items-center justify-center text-white">
-      <div class="text-center px-4">
-        <div class="mb-8">
-          <div class="w-52 h-52 mx-auto mb-6 rounded-full bg-gray-700 flex items-center justify-center overflow-hidden">
-            <img src="images/profile.png" class="w-52 h-52 object-cover" alt="Profile Image" />
-          </div>          
+<head>
+  <meta charset="UTF-8" />
+  <meta name="author" content="Raymart Reyes">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio - Full Stack Developer &amp; IT Systems Administrator</title>
+  <!-- Link to external CSS file -->
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-gray-50">
+  <!-- Navigation -->
+  <nav class="fixed top-0 w-full bg-white/90 backdrop-blur-sm z-50 shadow-sm">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center py-4">
+        <div class="text-2xl font-bold text-gray-800">RAYMART REYES</div>
+        <div class="hidden md:flex space-x-8">
+          <a href="#home" class="nav-link text-gray-600 hover:text-gray-900 transition-colors">Home</a>
+          <a href="#about" class="nav-link text-gray-600 hover:text-gray-900 transition-colors">About</a>
+          <a href="#skills" class="nav-link text-gray-600 hover:text-gray-900 transition-colors">Skills</a>
+          <a href="#experience" class="nav-link text-gray-600 hover:text-gray-900 transition-colors">Experience</a>
+          <a href="#education" class="nav-link text-gray-600 hover:text-gray-900 transition-colors">Education</a>
+          <a href="#projects" class="nav-link text-gray-600 hover:text-gray-900 transition-colors">Projects</a>
+          <a href="#contact" class="nav-link text-gray-600 hover:text-gray-900 transition-colors">Contact</a>
+        </div>
+        <button id="mobile-menu-btn" class="md:hidden text-gray-600">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+      <div class="px-4 py-2 space-y-2">
+        <a href="#home" class="block py-2 text-gray-600 hover:text-gray-900">Home</a>
+        <a href="#about" class="block py-2 text-gray-600 hover:text-gray-900">About</a>
+        <a href="#skills" class="block py-2 text-gray-600 hover:text-gray-900">Skills</a>
+        <a href="#experience" class="block py-2 text-gray-600 hover:text-gray-900">Experience</a>
+        <a href="#education" class="block py-2 text-gray-600 hover:text-gray-900">Education</a>
+        <a href="#projects" class="block py-2 text-gray-600 hover:text-gray-900">Projects</a>
+        <a href="#contact" class="block py-2 text-gray-600 hover:text-gray-900">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home"
+    class="min-h-screen bg-gradient-to-br from-blue-900 via-blue-700 to-blue-400 flex items-center justify-center text-white">
+    <div class="text-center px-4">
+      <div class="mb-8">
+        <div class="w-52 h-52 mx-auto mb-6 rounded-full bg-gray-700 flex items-center justify-center overflow-hidden">
+          <img src="images/profile.png" class="w-52 h-52 object-cover" alt="Profile Image" />
+        </div>
         <h1 class="text-4xl sm:text-5xl md:text-7xl font-bold mb-4">Raymart Reyes</h1>
         <div class="text-lg sm:text-xl md:text-2xl mb-8 h-8">
-          <span
-            id="typing-text"
-            class="typing-animation"></span>
+          <span id="typing-text" class="typing-animation"></span>
         </div>
         <p class="text-base sm:text-lg md:text-xl mb-8 max-w-2xl mx-auto opacity-90 px-4">
-          I’m a Full Stack Developer & IT Specialist with 11+ years of experience building scalable software and managing reliable IT system. I bridge the gap between development and operations to deliver end-to-end digital solutions.
+          I’m a Full Stack Developer & IT Specialist with 11+ years of experience building scalable software and
+          managing reliable IT system. I bridge the gap between development and operations to deliver end-to-end digital
+          solutions.
         </p>
         <div class="flex flex-col sm:flex-row gap-4 sm:space-x-4 sm:justify-center">
-          <button
-            onclick="scrollToSection('projects')"
+          <button onclick="scrollToSection('projects')"
             class="bg-white text-gray-900 px-6 sm:px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
             View My Work
           </button>
-          <button
-            onclick="scrollToSection('contact')"
+          <button onclick="scrollToSection('contact')"
             class="border-2 border-white text-white px-6 sm:px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-gray-900 transition-colors">
             Get In Touch
           </button>
         </div>
       </div>
-    </section>
+  </section>
 
-    <!-- About Section -->
-    <section
-      id="about"
-      class="py-20 bg-white">
-      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-16 fade-in">
-          <h2 class="text-4xl font-bold text-gray-800 mb-4">About Me</h2>
-          <div class="w-20 h-1 bg-gray-800 mx-auto"></div>
+  <!-- About Section -->
+  <section id="about" class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16 fade-in">
+        <h2 class="text-4xl font-bold text-gray-800 mb-4">About Me</h2>
+        <div class="w-20 h-1 bg-gray-800 mx-auto"></div>
+      </div>
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div class="fade-in">
+          <div class="bg-gray-100 rounded-2xl p-8 text-center">
+            <div class="text-8xl mb-4">⚡</div>
+            <h3 class="text-2xl font-semibold text-gray-800 mb-4">Enterprise Solutions</h3>
+            <p class="text-gray-600">Delivering robust, scalable systems for business and organizations</p>
+          </div>
         </div>
-        <div class="grid md:grid-cols-2 gap-12 items-center">
-          <div class="fade-in">
-            <div class="bg-gray-100 rounded-2xl p-8 text-center">
-              <div class="text-8xl mb-4">⚡</div>
-              <h3 class="text-2xl font-semibold text-gray-800 mb-4">Enterprise Solutions</h3>
-              <p class="text-gray-600">Delivering robust, scalable systems for business and organizations</p>
+        <div class="fade-in">
+          <h3 class="text-2xl font-semibold text-gray-800 mb-6">Full Stack Developer &amp; IT Systems Administrator</h3>
+          <p class="text-gray-600 mb-6 leading-relaxed">
+            I’m a problem-solver who thrives on learning new technologies and adapting quickly to any challenge. I
+            design and build scalable software solutions while managing reliable IT infrastructures that keep businesses
+            running smoothly. With over 11 years of experience in development, cloud services, and system
+            administration, I bridge the gap between software engineering and IT operations to deliver end-to-end
+            digital solutions.
+          </p>
+          <div class="grid grid-cols-2 gap-4 mb-6">
+            <div class="text-center p-4 bg-gray-50 rounded-lg">
+              <div class="text-2xl font-bold text-gray-800">30+</div>
+              <div class="text-sm text-gray-600">Systems Deployed</div>
+            </div>
+            <div class="text-center p-4 bg-gray-50 rounded-lg">
+              <div class="text-2xl font-bold text-gray-800">11+</div>
+              <div class="text-sm text-gray-600">Years Experience</div>
             </div>
           </div>
-          <div class="fade-in">
-            <h3 class="text-2xl font-semibold text-gray-800 mb-6">Full Stack Developer &amp; IT Systems Administrator</h3>
-            <p class="text-gray-600 mb-6 leading-relaxed">
-              I’m a problem-solver who thrives on learning new technologies and adapting quickly to any challenge. I design and build scalable software solutions while managing reliable IT infrastructures that keep businesses running smoothly. With over 11 years of experience in development, cloud services, and system administration, I bridge the gap between software engineering and IT operations to deliver end-to-end digital solutions.
-            </p>
-            <div class="grid grid-cols-2 gap-4 mb-6">
-              <div class="text-center p-4 bg-gray-50 rounded-lg">
-                <div class="text-2xl font-bold text-gray-800">30+</div>
-                <div class="text-sm text-gray-600">Systems Deployed</div>
-              </div>
-              <div class="text-center p-4 bg-gray-50 rounded-lg">
-                <div class="text-2xl font-bold text-gray-800">11+</div>
-                <div class="text-sm text-gray-600">Years Experience</div>
-              </div>
-            </div>
-            <div class="text-center">
-            <button
-              onclick="viewResume()"
+          <div class="text-center">
+            <button onclick="viewResume()"
               class="bg-gray-800 text-white px-6 py-3 rounded-lg hover:bg-gray-900 transition-colors">
               View Resume
             </button>
-            <a
-              href="assets/Raymart_Reyes_Resume.pdf"
+            <button id="downloadResume"
               class="bg-gray-800 text-white px-6 py-3 rounded-lg hover:bg-gray-900 transition-colors">
               Download Resume
-          </a>
-            </div>
-          </div>
+            </button>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+    </div>
+  </section>
 
-    <!-- Skills Section -->
-    <section
-      id="skills"
-      class="py-20 bg-gray-50">
-      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-16 fade-in">
-          <h2 class="text-4xl font-bold text-gray-800 mb-4">Core Skills &amp; Technologies</h2>
-          <div class="w-20 h-1 bg-gray-800 mx-auto"></div>
-        </div>
+  <!-- Skills Section -->
+  <section id="skills" class="py-20 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16 fade-in">
+        <h2 class="text-4xl font-bold text-gray-800 mb-4">Core Skills &amp; Technologies</h2>
+        <div class="w-20 h-1 bg-gray-800 mx-auto"></div>
+      </div>
 
-        <!-- Area of Expertise -->
-        <div class="mb-16 fade-in">
-          <div class="bg-white rounded-xl p-8 shadow-lg">
-            <h3 class="text-2xl font-semibold text-gray-800 mb-6 text-center">🎯 Area of Expertise</h3>
-            <div class="grid md:grid-cols-2 gap-6">
-              <div class="space-y-3">
-                <div class="flex items-center space-x-3">
-                  <div class="w-2 h-2 bg-gray-600 rounded-full"></div>
-                  <span class="text-gray-700">Project Management</span>
-                </div>
-                <div class="flex items-center space-x-3">
-                  <div class="w-2 h-2 bg-gray-600 rounded-full"></div>
-                  <span class="text-gray-700">Strategic Planning &amp; Execution</span>
-                </div>
-                <div class="flex items-center space-x-3">
-                  <div class="w-2 h-2 bg-gray-600 rounded-full"></div>
-                  <span class="text-gray-700">Scrum &amp; Agile Methodologies</span>
-                </div>
-              </div>
-              <div class="space-y-3">
-                <div class="flex items-center space-x-3">
-                  <div class="w-2 h-2 bg-gray-600 rounded-full"></div>
-                  <span class="text-gray-700">Continuous Process Improvement</span>
-                </div>
-                <div class="flex items-center space-x-3">
-                  <div class="w-2 h-2 bg-gray-600 rounded-full"></div>
-                  <span class="text-gray-700">System Architecture & Design</span>
-                </div>
-                <div class="flex items-center space-x-3">
-                  <div class="w-2 h-2 bg-gray-600 rounded-full"></div>
-                  <span class="text-gray-700">System Administration</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Soft Skills -->
-        <div class="mb-16 fade-in">
-          <div class="bg-white rounded-xl p-8 shadow-lg">
-            <h3 class="text-2xl font-semibold text-gray-800 mb-6 text-center">🤝 Soft Skills</h3>
-            <div class="flex flex-wrap gap-3 justify-center">
-              <span class="px-4 py-2 bg-gray-100 text-gray-700 rounded-full">Communication</span>
-              <span class="px-4 py-2 bg-gray-100 text-gray-700 rounded-full">Team Player</span>
-              <span class="px-4 py-2 bg-gray-100 text-gray-700 rounded-full">Critical Thinking</span>
-              <span class="px-4 py-2 bg-gray-100 text-gray-700 rounded-full">Adaptability</span>
-              <span class="px-4 py-2 bg-gray-100 text-gray-700 rounded-full">Problem Solving</span>
-              <span class="px-4 py-2 bg-gray-100 text-gray-700 rounded-full">Resourcefulness</span>
-              <span class="px-4 py-2 bg-gray-100 text-gray-700 rounded-full">Time Management</span>
-              <span class="px-4 py-2 bg-gray-100 text-gray-700 rounded-full">Attention to Details</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Technical Skills Grid -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-          <!-- Programming Languages -->
-          <div class="bg-white rounded-xl p-8 card-hover fade-in">
-            <div class="text-4xl mb-4 text-center">💻</div>
-            <h3 class="text-xl font-semibold text-gray-800 mb-6 text-center">Programming Languages</h3>
-            <div class="space-y-3">
-              <div class="flex items-center justify-between">
-                <span class="text-gray-700">PHP</span>
-                <div class="flex space-x-1">
-                  <div class="w-2 h-2 bg-gray-700 rounded-full"></div>
-                  <div class="w-2 h-2 bg-gray-700 rounded-full"></div>
-                  <div class="w-2 h-2 bg-gray-700 rounded-full"></div>
-                  <div class="w-2 h-2 bg-gray-700 rounded-full"></div>
-                  <div class="w-2 h-2 bg-gray-700 rounded-full"></div>
-                </div>
-              </div>
-              <div class="flex items-center justify-between">
-                <span class="text-gray-700">C#</span>
-                <div class="flex space-x-1">
-                  <div class="w-2 h-2 bg-gray-700 rounded-full"></div>
-                  <div class="w-2 h-2 bg-gray-700 rounded-full"></div>
-                  <div class="w-2 h-2 bg-gray-700 rounded-full"></div>
-                  <div class="w-2 h-2 bg-gray-700 rounded-full"></div>
-                  <div class="w-2 h-2 bg-gray-300 rounded-full"></div>
-                </div>
-              </div>
-              <div class="flex items-center justify-between">
-                <span class="text-gray-700">JavaScript</span>
-                <div class="flex space-x-1">
-                  <div class="w-2 h-2 bg-gray-700 rounded-full"></div>
-                  <div class="w-2 h-2 bg-gray-700 rounded-full"></div>
-                  <div class="w-2 h-2 bg-gray-700 rounded-full"></div>
-                  <div class="w-2 h-2 bg-gray-700 rounded-full"></div>
-                  <div class="w-2 h-2 bg-gray-700 rounded-full"></div>
-                </div>
-              </div>
-              <div class="text-sm text-gray-600 mt-4">HTML/HTML5, CSS, JAVA Spring, TypeScript, NodeJS</div>
-            </div>
-          </div>
-
-          <!-- Databases -->
-          <div class="bg-white rounded-xl p-8 card-hover fade-in">
-            <div class="text-4xl mb-4 text-center">🗄️</div>
-            <h3 class="text-xl font-semibold text-gray-800 mb-6 text-center">Databases</h3>
-            <div class="space-y-3">
-              <div class="flex items-center justify-between">
-                <span class="text-gray-700">MySQL</span>
-                <div class="flex space-x-1">
-                  <div class="w-2 h-2 bg-gray-700 rounded-full"></div>
-                  <div class="w-2 h-2 bg-gray-700 rounded-full"></div>
-                  <div class="w-2 h-2 bg-gray-700 rounded-full"></div>
-                  <div class="w-2 h-2 bg-gray-700 rounded-full"></div>
-                  <div class="w-2 h-2 bg-gray-700 rounded-full"></div>
-                </div>
-              </div>
-              <div class="flex items-center justify-between">
-                <span class="text-gray-700">MSSQL</span>
-                <div class="flex space-x-1">
-                  <div class="w-2 h-2 bg-gray-700 rounded-full"></div>
-                  <div class="w-2 h-2 bg-gray-700 rounded-full"></div>
-                  <div class="w-2 h-2 bg-gray-700 rounded-full"></div>
-                  <div class="w-2 h-2 bg-gray-700 rounded-full"></div>
-                  <div class="w-2 h-2 bg-gray-300 rounded-full"></div>
-                </div>
-              </div>
-              <div class="flex items-center justify-between">
-                <span class="text-gray-700">PostgreSQL</span>
-                <div class="flex space-x-1">
-                  <div class="w-2 h-2 bg-gray-700 rounded-full"></div>
-                  <div class="w-2 h-2 bg-gray-700 rounded-full"></div>
-                  <div class="w-2 h-2 bg-gray-700 rounded-full"></div>
-                  <div class="w-2 h-2 bg-gray-700 rounded-full"></div>
-                  <div class="w-2 h-2 bg-gray-300 rounded-full"></div>
-                </div>
-              </div>
-              <div class="text-sm text-gray-600 mt-4">REDIS, MongoDB</div>
-            </div>
-          </div>
-
-          <!-- Frameworks & Libraries -->
-          <div class="bg-white rounded-xl p-8 card-hover fade-in">
-            <div class="text-4xl mb-4 text-center">⚡</div>
-            <h3 class="text-xl font-semibold text-gray-800 mb-6 text-center">Frameworks &amp; Libraries</h3>
-            <div class="space-y-2 text-sm">
-              <div class="flex flex-wrap gap-2">
-                <span class="px-2 py-1 bg-gray-100 text-gray-700 rounded">.NET</span>
-                <span class="px-2 py-1 bg-gray-100 text-gray-700 rounded">Laravel</span>
-                <span class="px-2 py-1 bg-gray-100 text-gray-700 rounded">AngularJS</span>
-              </div>
-              <div class="flex flex-wrap gap-2">
-                <span class="px-2 py-1 bg-gray-100 text-gray-700 rounded">Redux</span>
-                <span class="px-2 py-1 bg-gray-100 text-gray-700 rounded">VueJS</span>
-                <span class="px-2 py-1 bg-gray-100 text-gray-700 rounded">CodeIgniter</span>
-              </div>
-              <div class="flex flex-wrap gap-2">
-                <span class="px-2 py-1 bg-gray-100 text-gray-700 rounded">WordPress</span>
-                <span class="px-2 py-1 bg-gray-100 text-gray-700 rounded">jQuery</span>
-                <span class="px-2 py-1 bg-gray-100 text-gray-700 rounded">Bootstrap</span>
-                <span class="px-2 py-1 bg-gray-100 text-gray-700 rounded">Entity Framwork</span>
-                <span class="px-2 py-1 bg-gray-100 text-gray-700 rounded">Ionize</span>
-                <span class="px-2 py-1 bg-gray-100 text-gray-700 rounded">AJAX</span>
-                <span class="px-2 py-1 bg-gray-100 text-gray-700 rounded">Tailwind</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- APIs & DevOps -->
-          <div class="bg-white rounded-xl p-8 card-hover fade-in">
-            <div class="text-4xl mb-4 text-center">☁️</div>
-            <h3 class="text-xl font-semibold text-gray-800 mb-6 text-center">APIs &amp; DevOps</h3>
-            <div class="space-y-4">
-              <div>
-                <h4 class="font-semibold text-gray-700 mb-2">APIs</h4>
-                <div class="flex flex-wrap gap-2">
-                  <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm">REST API</span>
-                  <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm">Web API</span>
-                  <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm">GraphQL</span>
-                </div>
-              </div>
-              <div>
-                <h4 class="font-semibold text-gray-700 mb-2">AWS Services</h4>
-                <div class="text-sm text-gray-600 space-y-1">
-                  <div>EC2, Lambda, API Gateway</div>
-                  <div>CloudFront, RDS, S3</div>
-                  <div>Elastic Beanstalk</div>
-                </div>
-              </div>
-              <div>
-                <h4 class="font-semibold text-gray-700 mb-2">Tools</h4>
-                <div class="flex flex-wrap gap-2">
-                  <span class="px-2 py-1 bg-gray-100 text-gray-700 rounded text-sm">Docker</span>
-                  <span class="px-2 py-1 bg-gray-100 text-gray-700 rounded text-sm">CI/CD</span>
-                  <span class="px-2 py-1 bg-gray-100 text-gray-700 rounded text-sm">Git</span>
-                  <span class="px-2 py-1 bg-gray-100 text-gray-700 rounded text-sm">Apache Kafka</span>
-                  <span class="px-2 py-1 bg-gray-100 text-gray-700 rounded text-sm">Code Review</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Architecture & Patterns -->
-          <div class="bg-white rounded-xl p-8 card-hover fade-in">
-            <div class="text-4xl mb-4 text-center">🏗️</div>
-            <h3 class="text-xl font-semibold text-gray-800 mb-6 text-center">Architecture &amp; Patterns</h3>
+      <!-- Area of Expertise -->
+      <div class="mb-16 fade-in">
+        <div class="bg-white rounded-xl p-8 shadow-lg">
+          <h3 class="text-2xl font-semibold text-gray-800 mb-6 text-center">🎯 Area of Expertise</h3>
+          <div class="grid md:grid-cols-2 gap-6">
             <div class="space-y-3">
               <div class="flex items-center space-x-3">
                 <div class="w-2 h-2 bg-gray-600 rounded-full"></div>
-                <span class="text-gray-700">MVC</span>
+                <span class="text-gray-700">Project Management</span>
               </div>
               <div class="flex items-center space-x-3">
                 <div class="w-2 h-2 bg-gray-600 rounded-full"></div>
-                <span class="text-gray-700">MVVM</span>
+                <span class="text-gray-700">Strategic Planning &amp; Execution</span>
               </div>
               <div class="flex items-center space-x-3">
                 <div class="w-2 h-2 bg-gray-600 rounded-full"></div>
-                <span class="text-gray-700">Domain-Driven Design</span>
-              </div>
-              <div class="flex items-center space-x-3">
-                <div class="w-2 h-2 bg-gray-600 rounded-full"></div>
-                <span class="text-gray-700">Microservices</span>
-              </div>
-              <div class="flex items-center space-x-3">
-                <div class="w-2 h-2 bg-gray-600 rounded-full"></div>
-                <span class="text-gray-700">N-tier Architecture</span>
-              </div>
-              <div class="flex items-center space-x-3">
-                <div class="w-2 h-2 bg-gray-600 rounded-full"></div>
-                <span class="text-gray-700">Unit Testing (TDD)</span>
+                <span class="text-gray-700">Scrum &amp; Agile Methodologies</span>
               </div>
             </div>
-          </div>
-
-          <!-- Servers -->
-          <div class="bg-white rounded-xl p-8 card-hover fade-in">
-            <div class="text-4xl mb-4 text-center">🖥️</div>
-            <h3 class="text-xl font-semibold text-gray-800 mb-6 text-center">Server Administration</h3>
             <div class="space-y-3">
-              <div class="flex items-center justify-between">
-                <span class="text-gray-700">Ubuntu Server</span>
-                <div class="flex space-x-1">
-                  <div class="w-2 h-2 bg-gray-700 rounded-full"></div>
-                  <div class="w-2 h-2 bg-gray-700 rounded-full"></div>
-                  <div class="w-2 h-2 bg-gray-700 rounded-full"></div>
-                  <div class="w-2 h-2 bg-gray-700 rounded-full"></div>
-                  <div class="w-2 h-2 bg-gray-700 rounded-full"></div>
-                </div>
+              <div class="flex items-center space-x-3">
+                <div class="w-2 h-2 bg-gray-600 rounded-full"></div>
+                <span class="text-gray-700">Continuous Process Improvement</span>
               </div>
-              <div class="flex items-center justify-between">
-                <span class="text-gray-700">Apache Server</span>
-                <div class="flex space-x-1">
-                  <div class="w-2 h-2 bg-gray-700 rounded-full"></div>
-                  <div class="w-2 h-2 bg-gray-700 rounded-full"></div>
-                  <div class="w-2 h-2 bg-gray-700 rounded-full"></div>
-                  <div class="w-2 h-2 bg-gray-700 rounded-full"></div>
-                  <div class="w-2 h-2 bg-gray-700 rounded-full"></div>
-                </div>
+              <div class="flex items-center space-x-3">
+                <div class="w-2 h-2 bg-gray-600 rounded-full"></div>
+                <span class="text-gray-700">System Architecture & Design</span>
               </div>
-              <div class="flex items-center justify-between">
-                <span class="text-gray-700">Windows Server</span>
-                <div class="flex space-x-1">
-                  <div class="w-2 h-2 bg-gray-700 rounded-full"></div>
-                  <div class="w-2 h-2 bg-gray-700 rounded-full"></div>
-                  <div class="w-2 h-2 bg-gray-700 rounded-full"></div>
-                  <div class="w-2 h-2 bg-gray-700 rounded-full"></div>
-                  <div class="w-2 h-2 bg-gray-300 rounded-full"></div>
-                </div>
-              </div>
-              <div class="flex items-center justify-between">
-                <span class="text-gray-700">Nginx</span>
-                <div class="flex space-x-1">
-                  <div class="w-2 h-2 bg-gray-700 rounded-full"></div>
-                  <div class="w-2 h-2 bg-gray-700 rounded-full"></div>
-                  <div class="w-2 h-2 bg-gray-700 rounded-full"></div>
-                  <div class="w-2 h-2 bg-gray-700 rounded-full"></div>
-                  <div class="w-2 h-2 bg-gray-300 rounded-full"></div>
-                </div>
+              <div class="flex items-center space-x-3">
+                <div class="w-2 h-2 bg-gray-600 rounded-full"></div>
+                <span class="text-gray-700">System Administration</span>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
 
-    <!-- Experience Section -->
-    <section
-      id="experience"
-      class="py-20 bg-white">
-      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-16 fade-in">
-          <h2 class="text-4xl font-bold text-gray-800 mb-4">Work Experience</h2>
-          <div class="w-20 h-1 bg-gray-800 mx-auto"></div>
+      <!-- Soft Skills -->
+      <div class="mb-16 fade-in">
+        <div class="bg-white rounded-xl p-8 shadow-lg">
+          <h3 class="text-2xl font-semibold text-gray-800 mb-6 text-center">🤝 Soft Skills</h3>
+          <div class="flex flex-wrap gap-3 justify-center">
+            <span class="px-4 py-2 bg-gray-100 text-gray-700 rounded-full">Communication</span>
+            <span class="px-4 py-2 bg-gray-100 text-gray-700 rounded-full">Team Player</span>
+            <span class="px-4 py-2 bg-gray-100 text-gray-700 rounded-full">Critical Thinking</span>
+            <span class="px-4 py-2 bg-gray-100 text-gray-700 rounded-full">Adaptability</span>
+            <span class="px-4 py-2 bg-gray-100 text-gray-700 rounded-full">Problem Solving</span>
+            <span class="px-4 py-2 bg-gray-100 text-gray-700 rounded-full">Resourcefulness</span>
+            <span class="px-4 py-2 bg-gray-100 text-gray-700 rounded-full">Time Management</span>
+            <span class="px-4 py-2 bg-gray-100 text-gray-700 rounded-full">Attention to Details</span>
+          </div>
         </div>
-        <div class="max-w-4xl mx-auto">
-          <!-- Timeline -->
-          <div class="relative">
-            <!-- Timeline line -->
-            <div class="absolute left-6 top-0 bottom-0 w-0.5 bg-gray-300"></div>
+      </div>
 
-            <!-- Experience Item 1 -->
-            <div class="relative flex items-start mb-12 fade-in">
-              <div class="flex-shrink-0 w-12 h-12 bg-gray-700 rounded-full flex items-center justify-center text-white font-bold text-lg z-10"></div>
-              <div class="ml-8 bg-white rounded-xl shadow-lg p-6 card-hover flex-1">
-                <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
-                  <div>
-                    <h3 class="text-xl font-semibold text-gray-800">IT Help Desk Coordinator / Administrator</h3>
-                    <h4 class="text-lg text-gray-600 font-medium">West Moberly First Nation | Moberly Lake, BC, Canada</h4>
-                  </div>
-                  <div class="text-gray-500 font-medium mt-2 md:mt-0">June 2024 - Present</div>
-                </div>
-                <p class="text-gray-600 leading-relaxed">
-                  I manage the entire IT operations alone, ensuring smooth system performance and reliable support for staff. My responsibilities include server administration, virtualization, and managing Microsoft 365 services to enhance workplace productivity. I also handle website updates, social media content, and PBX systems to improve communication and engagement. Additionally, I provide training to employees to boost digital proficiency across the organization.
-                </p>
-                <div class="flex flex-wrap gap-2 mt-4">
-                  <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">System Administration</span>
-                  <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">Network Administration</span>
-                  <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">Website</span>
-                  <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">IT Support & Training</span>
-                  <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">VMware, Hyper-V</span>
-                  <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">Veeam Backup</span>
-                  <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">Windows & Linux Server</span>
-                  <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">Microsoft 365 Administration</span>
-                  <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">SharePoint</span>
-                  <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">3CX PBX</span>
-                  <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">WordPress, Wix</span>
-                  <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">Facebook Page Management</span>
-                </div>
+      <!-- Technical Skills Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+        <!-- Programming Languages -->
+        <div class="bg-white rounded-xl p-8 card-hover fade-in">
+          <div class="text-4xl mb-4 text-center">💻</div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-6 text-center">Programming Languages</h3>
+          <div class="space-y-3">
+            <div class="flex items-center justify-between">
+              <span class="text-gray-700">PHP</span>
+              <div class="flex space-x-1">
+                <div class="w-2 h-2 bg-gray-700 rounded-full"></div>
+                <div class="w-2 h-2 bg-gray-700 rounded-full"></div>
+                <div class="w-2 h-2 bg-gray-700 rounded-full"></div>
+                <div class="w-2 h-2 bg-gray-700 rounded-full"></div>
+                <div class="w-2 h-2 bg-gray-700 rounded-full"></div>
               </div>
             </div>
-
-            <!-- Career Break -->
-            <div class="relative flex items-start mb-12 fade-in">
-              <div class="flex-shrink-0 w-12 h-12 bg-gray-700 rounded-full flex items-center justify-center text-white font-bold text-lg z-10"></div>
-              <div class="ml-8 bg-white rounded-xl shadow-lg p-6 card-hover flex-1">
-                <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
-                  <div>
-                    <h3 class="text-xl font-semibold text-gray-800">Career Break</h3>
-                    <h4 class="text-lg text-gray-600 font-medium">Relocation | Chetwynd, BC, Canada</h4>
-                  </div>
-                  <div class="text-gray-500 font-medium mt-2 md:mt-0">August 2023 - May 2024</div>
-                </div>
-                <p class="text-gray-600 leading-relaxed">
-                  During my recent career break, I relocated to Chetwynd, BC, Canada, embracing new challenges and opportunities for personal growth. While settling into a new community and working at the local store, I proactively invested in my professional development by enrolling in online courses in Web Development and Cyber Security. This period allowed me to build technical skills essential for today’s digital landscape, demonstrating adaptability, self-motivation, and a strong commitment to continuous learning.
-                </p>
+            <div class="flex items-center justify-between">
+              <span class="text-gray-700">C#</span>
+              <div class="flex space-x-1">
+                <div class="w-2 h-2 bg-gray-700 rounded-full"></div>
+                <div class="w-2 h-2 bg-gray-700 rounded-full"></div>
+                <div class="w-2 h-2 bg-gray-700 rounded-full"></div>
+                <div class="w-2 h-2 bg-gray-700 rounded-full"></div>
+                <div class="w-2 h-2 bg-gray-300 rounded-full"></div>
               </div>
             </div>
-
-
-            <!-- Experience Item 2 -->
-            <div class="relative flex items-start mb-12 fade-in">
-              <div class="flex-shrink-0 w-12 h-12 bg-gray-700 rounded-full flex items-center justify-center text-white font-bold text-lg z-10"></div>
-              <div class="ml-8 bg-white rounded-xl shadow-lg p-6 card-hover flex-1">
-                <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
-                  <div>
-                    <h3 class="text-xl font-semibold text-gray-800">Senior Software Developer</h3>
-                    <h4 class="text-lg text-gray-600 font-medium">Shiptek Solution Corp | San Pedro City, Philippines</h4>
-                  </div>
-                  <div class="text-gray-500 font-medium mt-2 md:mt-0">February 2020 – July 2023</div>
-                </div>
-                <p class="text-gray-600 leading-relaxed">
-                  At Shiptek, I led a backend development team in building logistics solutions using .NET, NodeJS, and AWS. I played a key role in architecting scalable microservices, integrating payment systems, and ensuring seamless API communication across platforms. By conducting code reviews and driving Agile practices, I improved collaboration, workflow efficiency, and software quality. I also managed the company’s cloud infrastructure, ensuring performance and cost optimization.
-                </p>
-                <div class="flex flex-wrap gap-2 mt-4">
-                  <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">.NET Core, C#</span>
-                  <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">Node.js</span>
-                  <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">JavaScript</span>
-                  <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">Restful API</span>
-                  <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">ReactJS</span>
-                  <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">AngularJS</span>
-                  <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">MySQL</span>
-                  <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">MSSQL</span>
-                  <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">Docker</span>
-                  <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">Firebase</span>
-                  <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">System Integration</span>
-                  <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">System Architecture Design</span>
-                  <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">Agile/Scrum</span>
-                  <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">Git, CI/CD</span>
-                  <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">AWS</span>
-                  <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">Apache Server</span>
-                </div>
+            <div class="flex items-center justify-between">
+              <span class="text-gray-700">JavaScript</span>
+              <div class="flex space-x-1">
+                <div class="w-2 h-2 bg-gray-700 rounded-full"></div>
+                <div class="w-2 h-2 bg-gray-700 rounded-full"></div>
+                <div class="w-2 h-2 bg-gray-700 rounded-full"></div>
+                <div class="w-2 h-2 bg-gray-700 rounded-full"></div>
+                <div class="w-2 h-2 bg-gray-700 rounded-full"></div>
               </div>
             </div>
+            <div class="text-sm text-gray-600 mt-4">HTML/HTML5, CSS, JAVA Spring, TypeScript, NodeJS</div>
+          </div>
+        </div>
 
-            <!-- Experience Item 3 -->
-            <div class="relative flex items-start mb-12 fade-in">
-              <div class="flex-shrink-0 w-12 h-12 bg-gray-700 rounded-full flex items-center justify-center text-white font-bold text-lg z-10"></div>
-              <div class="ml-8 bg-white rounded-xl shadow-lg p-6 card-hover flex-1">
-                <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
-                  <div>
-                    <h3 class="text-xl font-semibold text-gray-800">Full Stack Developer</h3>
-                    <h4 class="text-lg text-gray-600 font-medium">GVC | Pasay City, Philippines </h4>
-                  </div>
-                  <div class="text-gray-500 font-medium mt-2 md:mt-0">July 2018 – February 2020</div>
-                </div>
-                <p class="text-gray-600 leading-relaxed">
-                  I developed full-stack applications with Java Spring Boot and ReactJS to support large-scale marketing campaigns. My work included optimizing PostgreSQL databases, debugging critical issues, and ensuring applications were scalable and maintainable. I collaborated closely with QA and stakeholders to streamline development processes, resulting in faster delivery of features. As part of Agile teams, I contributed technical expertise to enhance product reliability and performance.
-                </p>
-                <div class="flex flex-wrap gap-2 mt-4">
-                  <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">Java Spring Boot</span>
-                  <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">Node.js</span>
-                  <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">JavaScript</span>
-                  <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">ReactJS</span>
-                  <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">PostgreSQL</span>
-                  <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">MySQL</span>
-                  <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">Docker</span>
-                  <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">Restful API</span>
-                  <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">System Integration</span>
-                  <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">System Architecture Design</span>
-                  <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">Agile/Scrum</span>
-                  <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">Git, CI/CD</span>
-                  <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">AWS</span>
-                  <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">Apache Kafka</span>
-                  <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">Nginx</span>
-                </div>
+        <!-- Databases -->
+        <div class="bg-white rounded-xl p-8 card-hover fade-in">
+          <div class="text-4xl mb-4 text-center">🗄️</div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-6 text-center">Databases</h3>
+          <div class="space-y-3">
+            <div class="flex items-center justify-between">
+              <span class="text-gray-700">MySQL</span>
+              <div class="flex space-x-1">
+                <div class="w-2 h-2 bg-gray-700 rounded-full"></div>
+                <div class="w-2 h-2 bg-gray-700 rounded-full"></div>
+                <div class="w-2 h-2 bg-gray-700 rounded-full"></div>
+                <div class="w-2 h-2 bg-gray-700 rounded-full"></div>
+                <div class="w-2 h-2 bg-gray-700 rounded-full"></div>
               </div>
             </div>
-
-            <!-- Experience Item 4 -->
-            <div class="relative flex items-start mb-12 fade-in">
-              <div class="flex-shrink-0 w-12 h-12 bg-gray-700 rounded-full flex items-center justify-center text-white font-bold text-lg z-10"></div>
-              <div class="ml-8 bg-white rounded-xl shadow-lg p-6 card-hover flex-1">
-                <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
-                  <div>
-                    <h3 class="text-xl font-semibold text-gray-800">Programmer</h3>
-                    <h4 class="text-lg text-gray-600 font-medium">EK Consulting & Management Service | Makati City, Philippines</h4>
-                  </div>
-                  <div class="text-gray-500 font-medium mt-2 md:mt-0">July 2017 – July 2018</div>
-                </div>
-                <p class="text-gray-600 leading-relaxed">
-                  I enhanced and maintained sports betting platforms and websites, focusing on performance, reliability, and scalability. My role included database management with MSSQL and Redis, optimizing data processes to reduce latency and improve recovery. Through backend improvements, I helped ensure stable real-time operations for business-critical systems.
-                </p>
-                <div class="flex flex-wrap gap-2 mt-4">
-                  <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">PHP Laravel</span>
-                  <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">Node.js</span>
-                  <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">JavaScript</span>
-                  <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">MSSQL</span>
-                  <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">Restful API</span>
-                  <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">System Integration</span>
-                  <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">System Architecture Design</span>
-                  <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">Agile/Scrum</span>
-                  <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">Git, CI/CD</span>
-                  <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">Database Optimization</span>
-                  <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">Apache Server</span>
-                </div>
+            <div class="flex items-center justify-between">
+              <span class="text-gray-700">MSSQL</span>
+              <div class="flex space-x-1">
+                <div class="w-2 h-2 bg-gray-700 rounded-full"></div>
+                <div class="w-2 h-2 bg-gray-700 rounded-full"></div>
+                <div class="w-2 h-2 bg-gray-700 rounded-full"></div>
+                <div class="w-2 h-2 bg-gray-700 rounded-full"></div>
+                <div class="w-2 h-2 bg-gray-300 rounded-full"></div>
               </div>
             </div>
+            <div class="flex items-center justify-between">
+              <span class="text-gray-700">PostgreSQL</span>
+              <div class="flex space-x-1">
+                <div class="w-2 h-2 bg-gray-700 rounded-full"></div>
+                <div class="w-2 h-2 bg-gray-700 rounded-full"></div>
+                <div class="w-2 h-2 bg-gray-700 rounded-full"></div>
+                <div class="w-2 h-2 bg-gray-700 rounded-full"></div>
+                <div class="w-2 h-2 bg-gray-300 rounded-full"></div>
+              </div>
+            </div>
+            <div class="text-sm text-gray-600 mt-4">REDIS, MongoDB</div>
+          </div>
+        </div>
 
-           <!-- Experience Item 5 -->
-           <div class="relative flex items-start mb-12 fade-in">
-            <div class="flex-shrink-0 w-12 h-12 bg-gray-700 rounded-full flex items-center justify-center text-white font-bold text-lg z-10"></div>
+        <!-- Frameworks & Libraries -->
+        <div class="bg-white rounded-xl p-8 card-hover fade-in">
+          <div class="text-4xl mb-4 text-center">⚡</div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-6 text-center">Frameworks &amp; Libraries</h3>
+          <div class="space-y-2 text-sm">
+            <div class="flex flex-wrap gap-2">
+              <span class="px-2 py-1 bg-gray-100 text-gray-700 rounded">.NET</span>
+              <span class="px-2 py-1 bg-gray-100 text-gray-700 rounded">Laravel</span>
+              <span class="px-2 py-1 bg-gray-100 text-gray-700 rounded">AngularJS</span>
+            </div>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-2 py-1 bg-gray-100 text-gray-700 rounded">Redux</span>
+              <span class="px-2 py-1 bg-gray-100 text-gray-700 rounded">VueJS</span>
+              <span class="px-2 py-1 bg-gray-100 text-gray-700 rounded">CodeIgniter</span>
+            </div>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-2 py-1 bg-gray-100 text-gray-700 rounded">WordPress</span>
+              <span class="px-2 py-1 bg-gray-100 text-gray-700 rounded">jQuery</span>
+              <span class="px-2 py-1 bg-gray-100 text-gray-700 rounded">Bootstrap</span>
+              <span class="px-2 py-1 bg-gray-100 text-gray-700 rounded">Entity Framwork</span>
+              <span class="px-2 py-1 bg-gray-100 text-gray-700 rounded">Ionize</span>
+              <span class="px-2 py-1 bg-gray-100 text-gray-700 rounded">AJAX</span>
+              <span class="px-2 py-1 bg-gray-100 text-gray-700 rounded">Tailwind</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- APIs & DevOps -->
+        <div class="bg-white rounded-xl p-8 card-hover fade-in">
+          <div class="text-4xl mb-4 text-center">☁️</div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-6 text-center">APIs &amp; DevOps</h3>
+          <div class="space-y-4">
+            <div>
+              <h4 class="font-semibold text-gray-700 mb-2">APIs</h4>
+              <div class="flex flex-wrap gap-2">
+                <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm">REST API</span>
+                <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm">Web API</span>
+                <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm">GraphQL</span>
+              </div>
+            </div>
+            <div>
+              <h4 class="font-semibold text-gray-700 mb-2">AWS Services</h4>
+              <div class="text-sm text-gray-600 space-y-1">
+                <div>EC2, Lambda, API Gateway</div>
+                <div>CloudFront, RDS, S3</div>
+                <div>Elastic Beanstalk</div>
+              </div>
+            </div>
+            <div>
+              <h4 class="font-semibold text-gray-700 mb-2">Tools</h4>
+              <div class="flex flex-wrap gap-2">
+                <span class="px-2 py-1 bg-gray-100 text-gray-700 rounded text-sm">Docker</span>
+                <span class="px-2 py-1 bg-gray-100 text-gray-700 rounded text-sm">CI/CD</span>
+                <span class="px-2 py-1 bg-gray-100 text-gray-700 rounded text-sm">Git</span>
+                <span class="px-2 py-1 bg-gray-100 text-gray-700 rounded text-sm">Apache Kafka</span>
+                <span class="px-2 py-1 bg-gray-100 text-gray-700 rounded text-sm">Code Review</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Architecture & Patterns -->
+        <div class="bg-white rounded-xl p-8 card-hover fade-in">
+          <div class="text-4xl mb-4 text-center">🏗️</div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-6 text-center">Architecture &amp; Patterns</h3>
+          <div class="space-y-3">
+            <div class="flex items-center space-x-3">
+              <div class="w-2 h-2 bg-gray-600 rounded-full"></div>
+              <span class="text-gray-700">MVC</span>
+            </div>
+            <div class="flex items-center space-x-3">
+              <div class="w-2 h-2 bg-gray-600 rounded-full"></div>
+              <span class="text-gray-700">MVVM</span>
+            </div>
+            <div class="flex items-center space-x-3">
+              <div class="w-2 h-2 bg-gray-600 rounded-full"></div>
+              <span class="text-gray-700">Domain-Driven Design</span>
+            </div>
+            <div class="flex items-center space-x-3">
+              <div class="w-2 h-2 bg-gray-600 rounded-full"></div>
+              <span class="text-gray-700">Microservices</span>
+            </div>
+            <div class="flex items-center space-x-3">
+              <div class="w-2 h-2 bg-gray-600 rounded-full"></div>
+              <span class="text-gray-700">N-tier Architecture</span>
+            </div>
+            <div class="flex items-center space-x-3">
+              <div class="w-2 h-2 bg-gray-600 rounded-full"></div>
+              <span class="text-gray-700">Unit Testing (TDD)</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Servers -->
+        <div class="bg-white rounded-xl p-8 card-hover fade-in">
+          <div class="text-4xl mb-4 text-center">🖥️</div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-6 text-center">Server Administration</h3>
+          <div class="space-y-3">
+            <div class="flex items-center justify-between">
+              <span class="text-gray-700">Ubuntu Server</span>
+              <div class="flex space-x-1">
+                <div class="w-2 h-2 bg-gray-700 rounded-full"></div>
+                <div class="w-2 h-2 bg-gray-700 rounded-full"></div>
+                <div class="w-2 h-2 bg-gray-700 rounded-full"></div>
+                <div class="w-2 h-2 bg-gray-700 rounded-full"></div>
+                <div class="w-2 h-2 bg-gray-700 rounded-full"></div>
+              </div>
+            </div>
+            <div class="flex items-center justify-between">
+              <span class="text-gray-700">Apache Server</span>
+              <div class="flex space-x-1">
+                <div class="w-2 h-2 bg-gray-700 rounded-full"></div>
+                <div class="w-2 h-2 bg-gray-700 rounded-full"></div>
+                <div class="w-2 h-2 bg-gray-700 rounded-full"></div>
+                <div class="w-2 h-2 bg-gray-700 rounded-full"></div>
+                <div class="w-2 h-2 bg-gray-700 rounded-full"></div>
+              </div>
+            </div>
+            <div class="flex items-center justify-between">
+              <span class="text-gray-700">Windows Server</span>
+              <div class="flex space-x-1">
+                <div class="w-2 h-2 bg-gray-700 rounded-full"></div>
+                <div class="w-2 h-2 bg-gray-700 rounded-full"></div>
+                <div class="w-2 h-2 bg-gray-700 rounded-full"></div>
+                <div class="w-2 h-2 bg-gray-700 rounded-full"></div>
+                <div class="w-2 h-2 bg-gray-300 rounded-full"></div>
+              </div>
+            </div>
+            <div class="flex items-center justify-between">
+              <span class="text-gray-700">Nginx</span>
+              <div class="flex space-x-1">
+                <div class="w-2 h-2 bg-gray-700 rounded-full"></div>
+                <div class="w-2 h-2 bg-gray-700 rounded-full"></div>
+                <div class="w-2 h-2 bg-gray-700 rounded-full"></div>
+                <div class="w-2 h-2 bg-gray-700 rounded-full"></div>
+                <div class="w-2 h-2 bg-gray-300 rounded-full"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16 fade-in">
+        <h2 class="text-4xl font-bold text-gray-800 mb-4">Work Experience</h2>
+        <div class="w-20 h-1 bg-gray-800 mx-auto"></div>
+      </div>
+      <div class="max-w-4xl mx-auto">
+        <!-- Timeline -->
+        <div class="relative">
+          <!-- Timeline line -->
+          <div class="absolute left-6 top-0 bottom-0 w-0.5 bg-gray-300"></div>
+
+          <!-- Experience Item 1 -->
+          <div class="relative flex items-start mb-12 fade-in">
+            <div
+              class="flex-shrink-0 w-12 h-12 bg-gray-700 rounded-full flex items-center justify-center text-white font-bold text-lg z-10">
+            </div>
+            <div class="ml-8 bg-white rounded-xl shadow-lg p-6 card-hover flex-1">
+              <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                <div>
+                  <h3 class="text-xl font-semibold text-gray-800">IT Help Desk Coordinator / Administrator</h3>
+                  <h4 class="text-lg text-gray-600 font-medium">West Moberly First Nation | Moberly Lake, BC, Canada
+                  </h4>
+                </div>
+                <div class="text-gray-500 font-medium mt-2 md:mt-0">June 2024 - Present</div>
+              </div>
+              <p class="text-gray-600 leading-relaxed">
+                I manage the entire IT operations alone, ensuring smooth system performance and reliable support for
+                staff. My responsibilities include server administration, virtualization, and managing Microsoft 365
+                services to enhance workplace productivity. I also handle website updates, social media content, and PBX
+                systems to improve communication and engagement. Additionally, I provide training to employees to boost
+                digital proficiency across the organization.
+              </p>
+              <div class="flex flex-wrap gap-2 mt-4">
+                <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">System Administration</span>
+                <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">Network Administration</span>
+                <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">Website</span>
+                <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">IT Support & Training</span>
+                <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">VMware, Hyper-V</span>
+                <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">Veeam Backup</span>
+                <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">Windows & Linux Server</span>
+                <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">Microsoft 365
+                  Administration</span>
+                <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">SharePoint</span>
+                <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">3CX PBX</span>
+                <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">WordPress, Wix</span>
+                <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">Facebook Page Management</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Career Break -->
+          <div class="relative flex items-start mb-12 fade-in">
+            <div
+              class="flex-shrink-0 w-12 h-12 bg-gray-700 rounded-full flex items-center justify-center text-white font-bold text-lg z-10">
+            </div>
+            <div class="ml-8 bg-white rounded-xl shadow-lg p-6 card-hover flex-1">
+              <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                <div>
+                  <h3 class="text-xl font-semibold text-gray-800">Career Break</h3>
+                  <h4 class="text-lg text-gray-600 font-medium">Relocation | Chetwynd, BC, Canada</h4>
+                </div>
+                <div class="text-gray-500 font-medium mt-2 md:mt-0">August 2023 - May 2024</div>
+              </div>
+              <p class="text-gray-600 leading-relaxed">
+                During my recent career break, I relocated to Chetwynd, BC, Canada, embracing new challenges and
+                opportunities for personal growth. While settling into a new community and working at the local store, I
+                proactively invested in my professional development by enrolling in online courses in Web Development
+                and Cyber Security. This period allowed me to build technical skills essential for today’s digital
+                landscape, demonstrating adaptability, self-motivation, and a strong commitment to continuous learning.
+              </p>
+            </div>
+          </div>
+
+
+          <!-- Experience Item 2 -->
+          <div class="relative flex items-start mb-12 fade-in">
+            <div
+              class="flex-shrink-0 w-12 h-12 bg-gray-700 rounded-full flex items-center justify-center text-white font-bold text-lg z-10">
+            </div>
+            <div class="ml-8 bg-white rounded-xl shadow-lg p-6 card-hover flex-1">
+              <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                <div>
+                  <h3 class="text-xl font-semibold text-gray-800">Senior Software Developer</h3>
+                  <h4 class="text-lg text-gray-600 font-medium">Shiptek Solution Corp | San Pedro City, Philippines</h4>
+                </div>
+                <div class="text-gray-500 font-medium mt-2 md:mt-0">February 2020 – July 2023</div>
+              </div>
+              <p class="text-gray-600 leading-relaxed">
+                At Shiptek, I led a backend development team in building logistics solutions using .NET, NodeJS, and
+                AWS. I played a key role in architecting scalable microservices, integrating payment systems, and
+                ensuring seamless API communication across platforms. By conducting code reviews and driving Agile
+                practices, I improved collaboration, workflow efficiency, and software quality. I also managed the
+                company’s cloud infrastructure, ensuring performance and cost optimization.
+              </p>
+              <div class="flex flex-wrap gap-2 mt-4">
+                <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">.NET Core, C#</span>
+                <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">Node.js</span>
+                <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">JavaScript</span>
+                <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">Restful API</span>
+                <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">ReactJS</span>
+                <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">AngularJS</span>
+                <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">MySQL</span>
+                <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">MSSQL</span>
+                <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">Docker</span>
+                <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">Firebase</span>
+                <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">System Integration</span>
+                <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">System Architecture Design</span>
+                <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">Agile/Scrum</span>
+                <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">Git, CI/CD</span>
+                <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">AWS</span>
+                <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">Apache Server</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Experience Item 3 -->
+          <div class="relative flex items-start mb-12 fade-in">
+            <div
+              class="flex-shrink-0 w-12 h-12 bg-gray-700 rounded-full flex items-center justify-center text-white font-bold text-lg z-10">
+            </div>
+            <div class="ml-8 bg-white rounded-xl shadow-lg p-6 card-hover flex-1">
+              <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                <div>
+                  <h3 class="text-xl font-semibold text-gray-800">Full Stack Developer</h3>
+                  <h4 class="text-lg text-gray-600 font-medium">GVC | Pasay City, Philippines </h4>
+                </div>
+                <div class="text-gray-500 font-medium mt-2 md:mt-0">July 2018 – February 2020</div>
+              </div>
+              <p class="text-gray-600 leading-relaxed">
+                I developed full-stack applications with Java Spring Boot and ReactJS to support large-scale marketing
+                campaigns. My work included optimizing PostgreSQL databases, debugging critical issues, and ensuring
+                applications were scalable and maintainable. I collaborated closely with QA and stakeholders to
+                streamline development processes, resulting in faster delivery of features. As part of Agile teams, I
+                contributed technical expertise to enhance product reliability and performance.
+              </p>
+              <div class="flex flex-wrap gap-2 mt-4">
+                <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">Java Spring Boot</span>
+                <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">Node.js</span>
+                <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">JavaScript</span>
+                <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">ReactJS</span>
+                <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">PostgreSQL</span>
+                <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">MySQL</span>
+                <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">Docker</span>
+                <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">Restful API</span>
+                <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">System Integration</span>
+                <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">System Architecture Design</span>
+                <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">Agile/Scrum</span>
+                <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">Git, CI/CD</span>
+                <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">AWS</span>
+                <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">Apache Kafka</span>
+                <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">Nginx</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Experience Item 4 -->
+          <div class="relative flex items-start mb-12 fade-in">
+            <div
+              class="flex-shrink-0 w-12 h-12 bg-gray-700 rounded-full flex items-center justify-center text-white font-bold text-lg z-10">
+            </div>
+            <div class="ml-8 bg-white rounded-xl shadow-lg p-6 card-hover flex-1">
+              <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                <div>
+                  <h3 class="text-xl font-semibold text-gray-800">Programmer</h3>
+                  <h4 class="text-lg text-gray-600 font-medium">EK Consulting & Management Service | Makati City,
+                    Philippines</h4>
+                </div>
+                <div class="text-gray-500 font-medium mt-2 md:mt-0">July 2017 – July 2018</div>
+              </div>
+              <p class="text-gray-600 leading-relaxed">
+                I enhanced and maintained sports betting platforms and websites, focusing on performance, reliability,
+                and scalability. My role included database management with MSSQL and Redis, optimizing data processes to
+                reduce latency and improve recovery. Through backend improvements, I helped ensure stable real-time
+                operations for business-critical systems.
+              </p>
+              <div class="flex flex-wrap gap-2 mt-4">
+                <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">PHP Laravel</span>
+                <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">Node.js</span>
+                <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">JavaScript</span>
+                <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">MSSQL</span>
+                <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">Restful API</span>
+                <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">System Integration</span>
+                <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">System Architecture Design</span>
+                <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">Agile/Scrum</span>
+                <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">Git, CI/CD</span>
+                <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">Database Optimization</span>
+                <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">Apache Server</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Experience Item 5 -->
+          <div class="relative flex items-start mb-12 fade-in">
+            <div
+              class="flex-shrink-0 w-12 h-12 bg-gray-700 rounded-full flex items-center justify-center text-white font-bold text-lg z-10">
+            </div>
             <div class="ml-8 bg-white rounded-xl shadow-lg p-6 card-hover flex-1">
               <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
                 <div>
                   <h3 class="text-xl font-semibold text-gray-800">Web Programmer</h3>
-                  <h4 class="text-lg text-gray-600 font-medium">Pacific Sea BPO Services Inc. | Makati City, Philippines</h4>
+                  <h4 class="text-lg text-gray-600 font-medium">Pacific Sea BPO Services Inc. | Makati City, Philippines
+                  </h4>
                 </div>
                 <div class="text-gray-500 font-medium mt-2 md:mt-0">January 2017 – July 2017</div>
               </div>
               <p class="text-gray-600 leading-relaxed">
-                I provided server administration and security support, including migrating from Windows to Linux and setting up firewalls. I also implemented monitoring systems to prevent downtime and optimize system reliability. Alongside backend work, I improved application features to fix bugs and enhance performance for better user experiences.
+                I provided server administration and security support, including migrating from Windows to Linux and
+                setting up firewalls. I also implemented monitoring systems to prevent downtime and optimize system
+                reliability. Alongside backend work, I improved application features to fix bugs and enhance performance
+                for better user experiences.
               </p>
               <div class="flex flex-wrap gap-2 mt-4">
                 <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">PHP</span>
@@ -669,7 +632,8 @@
                 <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">MySQL</span>
                 <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">Restful API</span>
                 <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">System Integration</span>
-                <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">Ubuntu Linux, Windows Server, Apache Server</span>
+                <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">Ubuntu Linux, Windows Server,
+                  Apache Server</span>
                 <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">Git</span>
                 <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">System Administration</span>
               </div>
@@ -678,7 +642,9 @@
 
           <!-- Experience Item 6 -->
           <div class="relative flex items-start mb-12 fade-in">
-            <div class="flex-shrink-0 w-12 h-12 bg-gray-700 rounded-full flex items-center justify-center text-white font-bold text-lg z-10"></div>
+            <div
+              class="flex-shrink-0 w-12 h-12 bg-gray-700 rounded-full flex items-center justify-center text-white font-bold text-lg z-10">
+            </div>
             <div class="ml-8 bg-white rounded-xl shadow-lg p-6 card-hover flex-1">
               <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
                 <div>
@@ -688,7 +654,10 @@
                 <div class="text-gray-500 font-medium mt-2 md:mt-0">September 2015 – January 2017</div>
               </div>
               <p class="text-gray-600 leading-relaxed">
-                I modernized internal systems by migrating the company’s HRIS and payroll applications to PHP CodeIgniter and Bootstrap. I also built and maintained the corporate website and mail servers to strengthen communication and accessibility. Additionally, I supported infrastructure upgrades by moving physical servers to VMware, improving efficiency and scalability.
+                I modernized internal systems by migrating the company’s HRIS and payroll applications to PHP
+                CodeIgniter and Bootstrap. I also built and maintained the corporate website and mail servers to
+                strengthen communication and accessibility. Additionally, I supported infrastructure upgrades by moving
+                physical servers to VMware, improving efficiency and scalability.
               </p>
               <div class="flex flex-wrap gap-2 mt-4">
                 <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">PHP CodeIgniter</span>
@@ -709,7 +678,9 @@
 
           <!-- Experience Item 7 -->
           <div class="relative flex items-start mb-12 fade-in">
-            <div class="flex-shrink-0 w-12 h-12 bg-gray-700 rounded-full flex items-center justify-center text-white font-bold text-lg z-10"></div>
+            <div
+              class="flex-shrink-0 w-12 h-12 bg-gray-700 rounded-full flex items-center justify-center text-white font-bold text-lg z-10">
+            </div>
             <div class="ml-8 bg-white rounded-xl shadow-lg p-6 card-hover flex-1">
               <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
                 <div>
@@ -719,7 +690,10 @@
                 <div class="text-gray-500 font-medium mt-2 md:mt-0">August 2013 – July 2015</div>
               </div>
               <p class="text-gray-600 leading-relaxed">
-                At Amertron, I developed reporting tools for the Manufacturing Execution System and automated accounting processes to reduce manual work. I also managed servers, PCs, and networking equipment to ensure smooth operations across the facility. My dual role in development and IT support allowed me to deliver reliable software solutions while maintaining critical infrastructure.
+                At Amertron, I developed reporting tools for the Manufacturing Execution System and automated accounting
+                processes to reduce manual work. I also managed servers, PCs, and networking equipment to ensure smooth
+                operations across the facility. My dual role in development and IT support allowed me to deliver
+                reliable software solutions while maintaining critical infrastructure.
               </p>
               <div class="flex flex-wrap gap-2 mt-4">
                 <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">PHP</span>
@@ -732,135 +706,130 @@
                 <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">SVN</span>
                 <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">Apache Server</span>
                 <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">System Administration</span>
-                </div>
-            </div>
-          </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Education & Certificates Section -->
-    <section
-      id="education"
-      class="py-20 bg-gray-50">
-      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-16 fade-in">
-          <h2 class="text-4xl font-bold text-gray-800 mb-4">Education &amp; Certifications</h2>
-          <div class="w-20 h-1 bg-gray-800 mx-auto"></div>
-        </div>
-
-        <div class="grid md:grid-cols-2 gap-12">
-          <!-- Education -->
-          <div class="fade-in">
-            <div class="bg-white rounded-xl p-8 shadow-lg card-hover">
-              <div class="text-center mb-6">
-                <div class="text-6xl mb-4">🎓</div>
-                <h3 class="text-2xl font-semibold text-gray-800 mb-2">Education</h3>
-              </div>
-
-              <div class="border-l-4 border-blue-600 pl-6 ml-4">
-                <div class="mb-6">
-                  <h4 class="text-xl font-semibold text-gray-800 mb-2">Bachelor of Science in Information Technology</h4>
-                  <div class="text-blue-600 font-medium mb-2">University of the City of Muntinlupa, Philippines</div>
-                  <div class="text-gray-500 text-sm mb-3">June 2009 – April 2013</div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Certificates -->
-          <div class="fade-in">
-            <div class="bg-white rounded-xl p-8 shadow-lg card-hover">
-              <div class="text-center mb-6">
-                <div class="text-6xl mb-4">📜</div>
-                <h3 class="text-2xl font-semibold text-gray-800 mb-2">Certifications</h3>
-              </div>
-
-              <div class="space-y-6">
-                <!-- Certificate 1 -->
-                <div class="border-l-4 border-blue-400 pl-6 ml-4">
-                  <a
-                    href="https://www.udemy.com/certificate/UC-409aa71d-922c-41ea-8ed0-076b19bf5473/"
-                    target="_blank">
-                    <h4 class="text-lg font-semibold text-gray-800 mb-1">The Web Developer Bootcamp 2024🔗</h4>
-                    <div class="text-blue-400 font-medium mb-1">Udemy.com</div>
-                  </a>
-                  <div class="text-gray-500 text-sm mb-2">April 2024</div>
-                </div>
-
-                <!-- Certificate 2 -->
-                <div class="border-l-4 border-gray-400 pl-6 ml-4">
-                  <h4 class="text-lg font-semibold text-gray-800 mb-1">CompTIA Security+</h4>
-                  <div class="text-gray-400 font-medium mb-1">CompTIA</div>
-                  <div class="text-gray-500 text-sm mb-2">In Progress</div>
-                </div>
-
-                <!-- Certificate 3 -->
-                <div class="border-l-4 border-blue-400 pl-6 ml-4">
-                  <h4 class="text-lg font-semibold text-gray-800 mb-1">Emergency First Aid Level 1</h4>
-                  <div class="text-blue-400 font-medium mb-1">Certified Training Provider</div>
-                  <div class="text-gray-500 text-sm mb-2">July 2025</div>
-                </div>
-
-                <!-- Certificate 4 -->
-                <div class="border-l-4 border-gray-400 pl-6 ml-4">
-                  <h4 class="text-lg font-semibold text-gray-800 mb-1">BC BILL 14</h4>
-                  <div class="text-gray-400 font-medium mb-1">British Columbia, Canada</div>
-                  <div class="text-gray-500 text-sm mb-2">April 2024</div>
-                </div>
-
-                <!-- Certificate 5 -->
-                <div class="border-l-4 border-blue-400 pl-6 ml-4">
-                  <h4 class="text-lg font-semibold text-gray-800 mb-1">Class 5 Driver Licence</h4>
-                  <div class="text-blue-400 font-medium mb-1">BC, Canada</div>
-                  <div class="text-gray-500 text-sm mb-2">Current</div>
-                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Projects Section -->
-    <section
-      id="projects"
-      class="py-20 bg-white">
-      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-16 fade-in">
-          <h2 class="text-4xl font-bold text-gray-800 mb-4">Featured Projects</h2>
-          <div class="w-20 h-1 bg-gray-800 mx-auto"></div>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-          <!-- Project -->
-          <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover fade-in">
-            <div class="h-36 bg-gradient-to-br from-gray-400 to-gray-600 flex items-center justify-center">
-              <div class="text-6xl">🚢</div>
+  <!-- Education & Certificates Section -->
+  <section id="education" class="py-20 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16 fade-in">
+        <h2 class="text-4xl font-bold text-gray-800 mb-4">Education &amp; Certifications</h2>
+        <div class="w-20 h-1 bg-gray-800 mx-auto"></div>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-12">
+        <!-- Education -->
+        <div class="fade-in">
+          <div class="bg-white rounded-xl p-8 shadow-lg card-hover">
+            <div class="text-center mb-6">
+              <div class="text-6xl mb-4">🎓</div>
+              <h3 class="text-2xl font-semibold text-gray-800 mb-2">Education</h3>
             </div>
-            <div class="p-6">
-              <h3 class="text-xl font-semibold text-gray-800 mb-2">Logistics Management System</h3>
-              <p class="text-gray-600 mb-4">
-                Blockchain-enabled digital platform that connects shippers, carriers, and logistics providers to streamline door-to-door container delivery, offering financial services and improved
-                efficiency.
-              </p>
-              <div class="flex flex-wrap gap-2 mb-4">
-                <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">.NET</span>
-                <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">NodeJS</span>
-                <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">JavaScript</span>
-                <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">PHP Laravel</span>
-                <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">RESTful API</span>
-                <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">HTML</span>
-                <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">Bootstrap</span>
-                <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">Tailwind</span>
-                <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">AngularJS</span>
-                <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">ReactJS</span>
-                <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">MySQL</span>
-                <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">MSSQL</span>
-                <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">Firebase</span>
-                <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">AWS</span>
+
+            <div class="border-l-4 border-blue-600 pl-6 ml-4">
+              <div class="mb-6">
+                <h4 class="text-xl font-semibold text-gray-800 mb-2">Bachelor of Science in Information Technology</h4>
+                <div class="text-blue-600 font-medium mb-2">University of the City of Muntinlupa, Philippines</div>
+                <div class="text-gray-500 text-sm mb-3">June 2009 – April 2013</div>
               </div>
-              <!-- <div class="flex space-x-4">
+            </div>
+          </div>
+        </div>
+
+        <!-- Certificates -->
+        <div class="fade-in">
+          <div class="bg-white rounded-xl p-8 shadow-lg card-hover">
+            <div class="text-center mb-6">
+              <div class="text-6xl mb-4">📜</div>
+              <h3 class="text-2xl font-semibold text-gray-800 mb-2">Certifications</h3>
+            </div>
+
+            <div class="space-y-6">
+              <!-- Certificate 1 -->
+              <div class="border-l-4 border-blue-400 pl-6 ml-4">
+                <a href="https://www.udemy.com/certificate/UC-409aa71d-922c-41ea-8ed0-076b19bf5473/" target="_blank">
+                  <h4 class="text-lg font-semibold text-gray-800 mb-1">The Web Developer Bootcamp 2024🔗</h4>
+                  <div class="text-blue-400 font-medium mb-1">Udemy.com</div>
+                </a>
+                <div class="text-gray-500 text-sm mb-2">April 2024</div>
+              </div>
+
+              <!-- Certificate 2 -->
+              <div class="border-l-4 border-gray-400 pl-6 ml-4">
+                <h4 class="text-lg font-semibold text-gray-800 mb-1">CompTIA Security+</h4>
+                <div class="text-gray-400 font-medium mb-1">CompTIA</div>
+                <div class="text-gray-500 text-sm mb-2">In Progress</div>
+              </div>
+
+              <!-- Certificate 3 -->
+              <div class="border-l-4 border-blue-400 pl-6 ml-4">
+                <h4 class="text-lg font-semibold text-gray-800 mb-1">Emergency First Aid Level 1</h4>
+                <div class="text-blue-400 font-medium mb-1">Certified Training Provider</div>
+                <div class="text-gray-500 text-sm mb-2">July 2025</div>
+              </div>
+
+              <!-- Certificate 4 -->
+              <div class="border-l-4 border-gray-400 pl-6 ml-4">
+                <h4 class="text-lg font-semibold text-gray-800 mb-1">BC BILL 14</h4>
+                <div class="text-gray-400 font-medium mb-1">British Columbia, Canada</div>
+                <div class="text-gray-500 text-sm mb-2">April 2024</div>
+              </div>
+
+              <!-- Certificate 5 -->
+              <div class="border-l-4 border-blue-400 pl-6 ml-4">
+                <h4 class="text-lg font-semibold text-gray-800 mb-1">Class 5 Driver Licence</h4>
+                <div class="text-blue-400 font-medium mb-1">BC, Canada</div>
+                <div class="text-gray-500 text-sm mb-2">Current</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16 fade-in">
+        <h2 class="text-4xl font-bold text-gray-800 mb-4">Featured Projects</h2>
+        <div class="w-20 h-1 bg-gray-800 mx-auto"></div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+        <!-- Project -->
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover fade-in">
+          <div class="h-36 bg-gradient-to-br from-gray-400 to-gray-600 flex items-center justify-center">
+            <div class="text-6xl">🚢</div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">Logistics Management System</h3>
+            <p class="text-gray-600 mb-4">
+              Blockchain-enabled digital platform that connects shippers, carriers, and logistics providers to
+              streamline door-to-door container delivery, offering financial services and improved
+              efficiency.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">.NET</span>
+              <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">NodeJS</span>
+              <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">JavaScript</span>
+              <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">PHP Laravel</span>
+              <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">RESTful API</span>
+              <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">HTML</span>
+              <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">Bootstrap</span>
+              <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">Tailwind</span>
+              <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">AngularJS</span>
+              <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">ReactJS</span>
+              <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">MySQL</span>
+              <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">MSSQL</span>
+              <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">Firebase</span>
+              <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">AWS</span>
+            </div>
+            <!-- <div class="flex space-x-4">
                 <button
                   onclick="viewProject('logistics')"
                   class="flex-1 bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition-colors">
@@ -872,479 +841,455 @@
                   View Code
                 </button>
               </div> -->
-            </div>
           </div>
-
-          <!-- Project -->
-          <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover fade-in">
-            <div class="h-36 bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center">
-              <div class="text-6xl">📣</div>
-            </div>
-            <div class="p-6">
-              <h3 class="text-xl font-semibold text-gray-800 mb-2">SportBook Marketing Campaign</h3>
-              <p class="text-gray-600 mb-4">
-                A robust backend content management system for sports betting platforms, enabling administrators to manage events, odds, users, and transactions efficiently and securely.
-              </p>
-              <div class="flex flex-wrap gap-2 mb-4">
-                <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">Java Spring Boot</span>
-                <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">NodeJS</span>
-                <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">JavaScript</span>
-                <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">PHP Laravel</span>
-                <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">HTML</span>
-                <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">Bootstrap</span>
-                <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">ReactJS</span>
-                <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">PostgreSQL</span>
-                <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">AWS</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Project -->
-          <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover fade-in">
-            <div class="h-36 bg-gradient-to-br from-gray-400 to-gray-600 flex items-center justify-center">
-              <div class="text-6xl">🏢</div>
-            </div>
-            <div class="p-6">
-              <h3 class="text-xl font-semibold text-gray-800 mb-2">HRIS</h3>
-              <p class="text-gray-600 mb-4">Complete HR management system with employee management</p>
-              <div class="flex flex-wrap gap-2 mb-4">
-                <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">PHP</span>
-                <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">JavaScript</span>
-                <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">CodeIgniter</span>
-                <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">HTML</span>
-                <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">MySQL</span>
-                <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">REDIS</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Project  -->
-          <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover fade-in">
-            <div class="h-36 bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center">
-              <div class="text-6xl">⚽</div>
-            </div>
-            <div class="p-6">
-              <h3 class="text-xl font-semibold text-gray-800 mb-2">SportBook Betting Website</h3>
-              <p class="text-gray-600 mb-4">
-                A feature-rich online sports betting platform that allows users to place bets on live and upcoming matches, view real-time odds, track their betting history, and manage their accounts
-                securely.
-              </p>
-              <div class="flex flex-wrap gap-2 mb-4">
-                <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">PHP</span>
-                <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">JavaScript</span>
-                <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">HTML</span>
-                <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">CodeIgniter</span>
-                <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">Bootstrap</span>
-                <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">MySQL</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Project -->
-          <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover fade-in">
-            <div class="h-36 bg-gradient-to-br from-gray-400 to-gray-600 flex items-center justify-center">
-              <div class="text-6xl">🖥️</div>
-            </div>
-            <div class="p-6">
-              <h3 class="text-xl font-semibold text-gray-800 mb-2">SportBook Betting CMS</h3>
-              <p class="text-gray-600 mb-4">
-                A robust backend content management system for sports betting platforms, enabling administrators to manage events, odds, users, and transactions efficiently and securely.
-              </p>
-              <div class="flex flex-wrap gap-2 mb-4">
-                <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">PHP</span>
-                <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">JavaScript</span>
-                <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">HTML</span>
-                <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">CodeIgniter</span>
-                <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">Bootstrap</span>
-                <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">MySQL</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Project -->
-          <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover fade-in">
-            <div class="h-36 bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center">
-              <div class="text-6xl">🏭</div>
-            </div>
-            <div class="p-6">
-              <h3 class="text-xl font-semibold text-gray-800 mb-2">Manufacturing Monitoring System</h3>
-              <p class="text-gray-600 mb-4">
-                A comprehensive system designed for semiconductor manufacturing plants to monitor production lines, track equipment performance, ensure process compliance, and optimize overall
-                efficiency in real-time.
-              </p>
-              <div class="flex flex-wrap gap-2 mb-4">
-                <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">PHP</span>
-                <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">JavaScript</span>
-                <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">HTML</span>
-                <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">MySQL</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Project -->
-          <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover fade-in">
-            <div class="h-36 bg-gradient-to-br from-gray-400 to-gray-600 flex items-center justify-center">
-              <div class="text-6xl">🏦</div>
-            </div>
-            <div class="p-6">
-              <h3 class="text-xl font-semibold text-gray-800 mb-2">Payroll</h3>
-              <p class="text-gray-600 mb-4">Human resources and payroll management system for employee salaries, deductions, and reporting.</p>
-              <div class="flex flex-wrap gap-2 mb-4">
-                <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">PHP</span>
-                <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">JavaScript</span>
-                <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">CodeIgniter</span>
-                <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">Bootstrap</span>
-                <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">HTML</span>
-                <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">MySQL</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Project -->
-          <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover fade-in">
-            <div class="h-36 bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center">
-              <div class="text-6xl">💰</div>
-            </div>
-            <div class="p-6">
-              <h3 class="text-xl font-semibold text-gray-800 mb-2">Accounting, Checking, and Voucher System</h3>
-              <p class="text-gray-600 mb-4">Financial management system to handle bookkeeping, bank reconciliations, and voucher tracking efficiently.</p>
-              <div class="flex flex-wrap gap-2 mb-4">
-                <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">PHP</span>
-                <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">JavaScript</span>
-                <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">HTML</span>
-                <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">MySQL</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Project -->
-          <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover fade-in">
-            <div class="h-36 bg-gradient-to-br from-gray-400 to-gray-600 flex items-center justify-center">
-              <div class="text-6xl">🌐</div>
-            </div>
-            <div class="p-6">
-              <h3 class="text-xl font-semibold text-gray-800 mb-2">Company Website</h3>
-              <p class="text-gray-600 mb-4">A professional corporate website to showcase business information, services, and online presence.</p>
-              <div class="flex flex-wrap gap-2 mb-4">
-                <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">PHP</span>
-                <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">JavaScript</span>
-                <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">WordPress</span>
-                <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">Bootstrap</span>
-                <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">HTML</span>
-                <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">MySQL</span>
-              </div>
-            </div>
-          </div>
-
-           <!-- Project -->
-          <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover fade-in">
-            <div class="h-36 bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center">
-              <div class="text-6xl">💼</div>
-            </div>
-            <div class="p-6">
-              <h3 class="text-xl font-semibold text-gray-800 mb-2">Freelance Projects</h3>
-              <p class="text-gray-600 mb-4">Worked on diverse freelance projects delivering custom web applications, APIs, and business solutions.
-              <div class="flex flex-wrap gap-2 mb-4">
-                <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">API for Data Integration</span>
-                <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">Mobile App - Translator School Project</span>
-                <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">e-commerce</span>
-                <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">Website</span>
-                <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">School System</span>
-                <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">Payment System</span>
-                <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">Payroll</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Project -->
-          <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover fade-in">
-            <div class="h-36 bg-gradient-to-br from-gray-400 to-gray-600 flex items-center justify-center">
-              <div class="text-6xl">🎓</div>
-            </div>
-            <div class="p-6">
-              <h3 class="text-xl font-semibold text-gray-800 mb-2">School System</h3>
-              <p class="text-gray-600 mb-4">Platform for managing student information, attendance, grading, and overall school administration.</p>
-              <div class="flex flex-wrap gap-2 mb-4">
-                <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">PHP</span>
-                <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">JavaScript</span>
-                <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">CodeIgniter</span>
-                <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">Bootstrap</span>
-                <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">HTML</span>
-                <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">MySQL</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Project -->
-          <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover fade-in">
-            <div class="h-36 bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center">
-              <div class="text-6xl">🛍️</div>
-            </div>
-            <div class="p-6">
-              <h3 class="text-xl font-semibold text-gray-800 mb-2">E-commerce</h3>
-              <p class="text-gray-600 mb-4">Online store platform supporting product listings, shopping cart, payments, and order management.</p>
-              <div class="flex flex-wrap gap-2 mb-4">
-                <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">PHP</span>
-                <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">JavaScript</span>
-                <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">CodeIgniter</span>
-                <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">Bootstrap</span>
-                <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">HTML</span>
-                <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">MySQL</span>
-              </div>
-            </div>
-          </div>
-
-            <!-- Project -->
-            <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover fade-in">
-              <div class="h-36 bg-gradient-to-br from-gray-400 to-gray-600 flex items-center justify-center">
-                <div class="text-6xl">🚢</div>
-              </div>
-              <div class="p-6">
-                <h3 class="text-xl font-semibold text-gray-800 mb-2">Import Export System</h3>
-                <p class="text-gray-600 mb-4">System to manage import/export processes, logistics, and required documentation seamlessly.</p>
-                <div class="flex flex-wrap gap-2 mb-4">
-                  <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">PHP</span>
-                  <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">JavaScript</span>
-                  <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">HTML</span>
-                  <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">MySQL</span>
-                </div>
-              </div>
-            </div>
-  
-
-          <!-- Project -->
-          <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover fade-in">
-            <div class="h-36 bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center">
-              <div class="text-6xl">☁️</div>
-            </div>
-            <div class="p-6">
-              <h3 class="text-xl font-semibold text-gray-800 mb-2">Cloud Infrastructure Platform</h3>
-              <p class="text-gray-600 mb-4">A scalable and robust cloud infrastructure built using AWS services including EC2, Lambda, API Gateway, CloudFront, RDS, S3, and Elastic Beanstalk. Integrated with Docker and CI/CD pipelines to automate deployments and ensure high availability and performance.</p>
-              <div class="flex flex-wrap gap-2 mb-4">
-                <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">AWS</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Project -->
-          <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover fade-in">
-            <div class="h-36 bg-gradient-to-br from-gray-400 to-gray-600 flex items-center justify-center">
-              <div class="text-6xl">🖥️</div>
-            </div>
-            <div class="p-6">
-              <h3 class="text-xl font-semibold text-gray-800 mb-2">System Administration</h3>
-              <p class="text-gray-600 mb-4">Comprehensive server administration expertise across Linux, Windows, and VMware environments, including system setup, configuration, maintenance, and virtualization management.</p>
-              <div class="flex flex-wrap gap-2 mb-4">
-                <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">Linux Server</span>
-                <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">Windows Server</span>
-                <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">VMware, Hyper-V</span>
-                <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">Veeam Backup</span>
-                <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">3CX PBX</span>
-                <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">Microsoft 365 Administrator</span>
-              </div>
-            </div>
-          </div>
-
         </div>
+
+        <!-- Project -->
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover fade-in">
+          <div class="h-36 bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center">
+            <div class="text-6xl">📣</div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">SportBook Marketing Campaign</h3>
+            <p class="text-gray-600 mb-4">
+              A robust backend content management system for sports betting platforms, enabling administrators to manage
+              events, odds, users, and transactions efficiently and securely.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">Java Spring Boot</span>
+              <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">NodeJS</span>
+              <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">JavaScript</span>
+              <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">PHP Laravel</span>
+              <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">HTML</span>
+              <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">Bootstrap</span>
+              <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">ReactJS</span>
+              <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">PostgreSQL</span>
+              <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">AWS</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project -->
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover fade-in">
+          <div class="h-36 bg-gradient-to-br from-gray-400 to-gray-600 flex items-center justify-center">
+            <div class="text-6xl">🏢</div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">HRIS</h3>
+            <p class="text-gray-600 mb-4">Complete HR management system with employee management</p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">PHP</span>
+              <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">JavaScript</span>
+              <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">CodeIgniter</span>
+              <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">HTML</span>
+              <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">MySQL</span>
+              <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">REDIS</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project  -->
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover fade-in">
+          <div class="h-36 bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center">
+            <div class="text-6xl">⚽</div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">SportBook Betting Website</h3>
+            <p class="text-gray-600 mb-4">
+              A feature-rich online sports betting platform that allows users to place bets on live and upcoming
+              matches, view real-time odds, track their betting history, and manage their accounts
+              securely.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">PHP</span>
+              <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">JavaScript</span>
+              <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">HTML</span>
+              <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">CodeIgniter</span>
+              <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">Bootstrap</span>
+              <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">MySQL</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project -->
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover fade-in">
+          <div class="h-36 bg-gradient-to-br from-gray-400 to-gray-600 flex items-center justify-center">
+            <div class="text-6xl">🖥️</div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">SportBook Betting CMS</h3>
+            <p class="text-gray-600 mb-4">
+              A robust backend content management system for sports betting platforms, enabling administrators to manage
+              events, odds, users, and transactions efficiently and securely.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">PHP</span>
+              <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">JavaScript</span>
+              <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">HTML</span>
+              <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">CodeIgniter</span>
+              <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">Bootstrap</span>
+              <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">MySQL</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project -->
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover fade-in">
+          <div class="h-36 bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center">
+            <div class="text-6xl">🏭</div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">Manufacturing Monitoring System</h3>
+            <p class="text-gray-600 mb-4">
+              A comprehensive system designed for semiconductor manufacturing plants to monitor production lines, track
+              equipment performance, ensure process compliance, and optimize overall
+              efficiency in real-time.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">PHP</span>
+              <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">JavaScript</span>
+              <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">HTML</span>
+              <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">MySQL</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project -->
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover fade-in">
+          <div class="h-36 bg-gradient-to-br from-gray-400 to-gray-600 flex items-center justify-center">
+            <div class="text-6xl">🏦</div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">Payroll</h3>
+            <p class="text-gray-600 mb-4">Human resources and payroll management system for employee salaries,
+              deductions, and reporting.</p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">PHP</span>
+              <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">JavaScript</span>
+              <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">CodeIgniter</span>
+              <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">Bootstrap</span>
+              <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">HTML</span>
+              <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">MySQL</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project -->
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover fade-in">
+          <div class="h-36 bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center">
+            <div class="text-6xl">💰</div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">Accounting, Checking, and Voucher System</h3>
+            <p class="text-gray-600 mb-4">Financial management system to handle bookkeeping, bank reconciliations, and
+              voucher tracking efficiently.</p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">PHP</span>
+              <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">JavaScript</span>
+              <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">HTML</span>
+              <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">MySQL</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project -->
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover fade-in">
+          <div class="h-36 bg-gradient-to-br from-gray-400 to-gray-600 flex items-center justify-center">
+            <div class="text-6xl">🌐</div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">Company Website</h3>
+            <p class="text-gray-600 mb-4">A professional corporate website to showcase business information, services,
+              and online presence.</p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">PHP</span>
+              <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">JavaScript</span>
+              <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">WordPress</span>
+              <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">Bootstrap</span>
+              <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">HTML</span>
+              <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">MySQL</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project -->
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover fade-in">
+          <div class="h-36 bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center">
+            <div class="text-6xl">💼</div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">Freelance Projects</h3>
+            <p class="text-gray-600 mb-4">Worked on diverse freelance projects delivering custom web applications, APIs,
+              and business solutions.
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">API for Data Integration</span>
+              <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">Mobile App - Translator School
+                Project</span>
+              <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">e-commerce</span>
+              <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">Website</span>
+              <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">School System</span>
+              <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">Payment System</span>
+              <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">Payroll</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project -->
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover fade-in">
+          <div class="h-36 bg-gradient-to-br from-gray-400 to-gray-600 flex items-center justify-center">
+            <div class="text-6xl">🎓</div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">School System</h3>
+            <p class="text-gray-600 mb-4">Platform for managing student information, attendance, grading, and overall
+              school administration.</p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">PHP</span>
+              <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">JavaScript</span>
+              <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">CodeIgniter</span>
+              <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">Bootstrap</span>
+              <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">HTML</span>
+              <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">MySQL</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project -->
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover fade-in">
+          <div class="h-36 bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center">
+            <div class="text-6xl">🛍️</div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">E-commerce</h3>
+            <p class="text-gray-600 mb-4">Online store platform supporting product listings, shopping cart, payments,
+              and order management.</p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">PHP</span>
+              <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">JavaScript</span>
+              <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">CodeIgniter</span>
+              <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">Bootstrap</span>
+              <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">HTML</span>
+              <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">MySQL</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project -->
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover fade-in">
+          <div class="h-36 bg-gradient-to-br from-gray-400 to-gray-600 flex items-center justify-center">
+            <div class="text-6xl">🚢</div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">Import Export System</h3>
+            <p class="text-gray-600 mb-4">System to manage import/export processes, logistics, and required
+              documentation seamlessly.</p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">PHP</span>
+              <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">JavaScript</span>
+              <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">HTML</span>
+              <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">MySQL</span>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Project -->
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover fade-in">
+          <div class="h-36 bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center">
+            <div class="text-6xl">☁️</div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">Cloud Infrastructure Platform</h3>
+            <p class="text-gray-600 mb-4">A scalable and robust cloud infrastructure built using AWS services including
+              EC2, Lambda, API Gateway, CloudFront, RDS, S3, and Elastic Beanstalk. Integrated with Docker and CI/CD
+              pipelines to automate deployments and ensure high availability and performance.</p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">AWS</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project -->
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover fade-in">
+          <div class="h-36 bg-gradient-to-br from-gray-400 to-gray-600 flex items-center justify-center">
+            <div class="text-6xl">🖥️</div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">System Administration</h3>
+            <p class="text-gray-600 mb-4">Comprehensive server administration expertise across Linux, Windows, and
+              VMware environments, including system setup, configuration, maintenance, and virtualization management.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">Linux Server</span>
+              <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">Windows Server</span>
+              <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">VMware, Hyper-V</span>
+              <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">Veeam Backup</span>
+              <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">3CX PBX</span>
+              <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">Microsoft 365 Administrator</span>
+            </div>
+          </div>
+        </div>
+
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Contact Section -->
-    <section
-      id="contact"
-      class="py-20 bg-gray-50">
-      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-16 fade-in">
-          <h2 class="text-4xl font-bold text-gray-800 mb-4">Get In Touch</h2>
-          <div class="w-20 h-1 bg-blue-600 mx-auto mb-6"></div>
-          <p class="text-gray-600 text-lg">Ready to bring your ideas to life? Let's discuss your next project!</p>
-        </div>
-        <div class="grid md:grid-cols-2 gap-12">
-          <!-- Contact Info -->
-          <div class="fade-in">
-            <h3 class="text-2xl font-semibold text-gray-800 mb-6">Let's Connect</h3>
-            <div class="space-y-6">
-              <div class="flex items-center space-x-4">
-                <div class="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center">
-                  <span class="text-xl">📧</span>
-                </div>
-                <div>
-                  <div class="font-semibold text-gray-800">Email</div>
-                  <div class="text-gray-600">reyesraymartca@gmail.com</div>
-                </div>
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 bg-gray-50">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16 fade-in">
+        <h2 class="text-4xl font-bold text-gray-800 mb-4">Get In Touch</h2>
+        <div class="w-20 h-1 bg-blue-600 mx-auto mb-6"></div>
+        <p class="text-gray-600 text-lg">Ready to bring your ideas to life? Let's discuss your next project!</p>
+      </div>
+      <div class="grid md:grid-cols-2 gap-12">
+        <!-- Contact Info -->
+        <div class="fade-in">
+          <h3 class="text-2xl font-semibold text-gray-800 mb-6">Let's Connect</h3>
+          <div class="space-y-6">
+            <div class="flex items-center space-x-4">
+              <div class="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center">
+                <span class="text-xl">📧</span>
               </div>
-              <div class="flex items-center space-x-4">
-                <div class="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center">
-                  <span class="text-xl">📱</span>
-                </div>
-                <div>
-                  <div class="font-semibold text-gray-800">Phone</div>
-                  <div class="text-gray-600">250-401-8485</div>
-                </div>
-              </div>
-              <div class="flex items-center space-x-4">
-                <div class="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center">
-                  <span class="text-xl">📍</span>
-                </div>
-                <div>
-                  <div class="font-semibold text-gray-800">Location</div>
-                  <div class="text-gray-600">Chetwynd, BC, Canada</div>
-                </div>
+              <div>
+                <div class="font-semibold text-gray-800">Email</div>
+                <div class="text-gray-600">reyesraymartca@gmail.com</div>
               </div>
             </div>
-            <div class="mt-8">
-              <h4 class="font-semibold text-gray-800 mb-4">Follow Me</h4>
-              <div class="flex space-x-4">
-                <a
-                  href="https://www.linkedin.com/in/reyesraymart/"
-                  target="_blank"
-                  class="w-12 h-12 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors flex items-center justify-center group">
-                  <svg
-                    class="w-6 h-6"
-                    fill="currentColor"
-                    viewBox="0 0 24 24">
-                    <path
-                      d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"></path>
-                  </svg>
-                </a>
-                <a
-                  href="https://github.com/reyesraymart05"
-                  target="_blank"
-                  class="w-12 h-12 bg-gray-800 text-white rounded-lg hover:bg-gray-900 transition-colors flex items-center justify-center group">
-                  <svg
-                    class="w-6 h-6"
-                    fill="currentColor"
-                    viewBox="0 0 24 24">
-                    <path
-                      d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"></path>
-                  </svg>
-                </a>
-                <a
-                  href="mailto:reyesraymartca@gmail.com"
-                  class="w-12 h-12 bg-red-600 text-white rounded-lg hover:bg-red-700 transition-colors flex items-center justify-center group">
-                  <svg
-                    class="w-6 h-6"
-                    fill="currentColor"
-                    viewBox="0 0 24 24">
-                    <path
-                      d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-.904.732-1.636 1.636-1.636h.749L12 10.724l9.615-6.903h.749c.904 0 1.636.732 1.636 1.636z"></path>
-                  </svg>
-                </a>
+            <div class="flex items-center space-x-4">
+              <div class="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center">
+                <span class="text-xl">📱</span>
+              </div>
+              <div>
+                <div class="font-semibold text-gray-800">Phone</div>
+                <div class="text-gray-600">250-401-8485</div>
               </div>
             </div>
-            <div class="mt-8">
-              <div class="text-left">
-                <button
-                  onclick="viewResume()"
-                  class="bg-gray-800 text-white px-6 py-3 rounded-lg hover:bg-gray-900 transition-colors">
-                  View Resume
-                </button>
-                <button
-                  href="assets/Raymart_Reyes_Resume.pdf"
-                  class="bg-gray-800 text-white px-6 py-3 rounded-lg hover:bg-gray-900 transition-colors">
-                  Download Resume
-                </button>
+            <div class="flex items-center space-x-4">
+              <div class="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center">
+                <span class="text-xl">📍</span>
+              </div>
+              <div>
+                <div class="font-semibold text-gray-800">Location</div>
+                <div class="text-gray-600">Chetwynd, BC, Canada</div>
               </div>
             </div>
           </div>
-
-          <!-- Contact Form -->
-          <div class="fade-in">
-            <form
-              id="contact-form"
-              class="space-y-6">
-              <div>
-                <label class="block text-gray-700 font-semibold mb-2">Name</label>
-                <input
-                  type="text"
-                  id="name"
-                  class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-600 focus:border-transparent"
-                  placeholder="Your Name"
-                  required="" />
-              </div>
-              <div>
-                <label class="block text-gray-700 font-semibold mb-2">Email</label>
-                <input
-                  type="email"
-                  id="email"
-                  class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-600 focus:border-transparent"
-                  placeholder="your.email@example.com"
-                  required="" />
-              </div>
-              <div>
-                <label class="block text-gray-700 font-semibold mb-2">Subject</label>
-                <input
-                  type="text"
-                  id="subject"
-                  class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-600 focus:border-transparent"
-                  placeholder="Project Discussion"
-                  required="" />
-              </div>
-              <div>
-                <label class="block text-gray-700 font-semibold mb-2">Message</label>
-                <textarea
-                  id="message"
-                  rows="5"
-                  class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-600 focus:border-transparent"
-                  placeholder="Tell me about your project..."
-                  required=""></textarea>
-              </div>
-              <button
-                type="submit"
-                class="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
-                Send Message
+          <div class="mt-8">
+            <h4 class="font-semibold text-gray-800 mb-4">Follow Me</h4>
+            <div class="flex space-x-4">
+              <a href="https://www.linkedin.com/in/reyesraymart/" target="_blank"
+                class="w-12 h-12 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors flex items-center justify-center group">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z">
+                  </path>
+                </svg>
+              </a>
+              <a href="https://github.com/reyesraymart05" target="_blank"
+                class="w-12 h-12 bg-gray-800 text-white rounded-lg hover:bg-gray-900 transition-colors flex items-center justify-center group">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z">
+                  </path>
+                </svg>
+              </a>
+              <a href="mailto:reyesraymartca@gmail.com"
+                class="w-12 h-12 bg-red-600 text-white rounded-lg hover:bg-red-700 transition-colors flex items-center justify-center group">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-.904.732-1.636 1.636-1.636h.749L12 10.724l9.615-6.903h.749c.904 0 1.636.732 1.636 1.636z">
+                  </path>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="mt-8">
+            <div class="text-left">
+              <button onclick="viewResume()"
+                class="bg-gray-800 text-white px-6 py-3 rounded-lg hover:bg-gray-900 transition-colors">
+                View Resume
               </button>
-            </form>
+              <button id="downloadResume"
+                class="bg-gray-800 text-white px-6 py-3 rounded-lg hover:bg-gray-900 transition-colors">
+                Download Resume
+              </button>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
 
-    <!-- Resume Modal -->
-    <div
-      id="resume-modal"
-      class="modal">
-      <div class="modal-content">
-        <button
-          class="close-btn"
-          onclick="closeResumeModal()">
-          ×
-        </button>
-        <div class="modal-header">
-          <h3 class="text-xl font-semibold text-gray-800">📄 Raymart Reyes - Resume</h3>
-        </div>
-        <div class="modal-body">
-          <iframe
-            id="pdf-viewer"
-            class="pdf-viewer"
-            src="assets/Raymart_Reyes_Resume.pdf"
-            title="Raymart Reyes Resume">
-          </iframe>
+        <!-- Contact Form -->
+        <div class="fade-in">
+          <form id="contact-form" class="space-y-6">
+            <div>
+              <label class="block text-gray-700 font-semibold mb-2">Name</label>
+              <input type="text" id="name"
+                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-600 focus:border-transparent"
+                placeholder="Your Name" required="" />
+            </div>
+            <div>
+              <label class="block text-gray-700 font-semibold mb-2">Email</label>
+              <input type="email" id="email"
+                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-600 focus:border-transparent"
+                placeholder="your.email@example.com" required="" />
+            </div>
+            <div>
+              <label class="block text-gray-700 font-semibold mb-2">Subject</label>
+              <input type="text" id="subject"
+                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-600 focus:border-transparent"
+                placeholder="Project Discussion" required="" />
+            </div>
+            <div>
+              <label class="block text-gray-700 font-semibold mb-2">Message</label>
+              <textarea id="message" rows="5"
+                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-600 focus:border-transparent"
+                placeholder="Tell me about your project..." required=""></textarea>
+            </div>
+            <button type="submit"
+              class="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
+              Send Message
+            </button>
+          </form>
         </div>
       </div>
     </div>
+  </section>
 
-    <!-- Back to Top Button -->
-    <button
-      id="back-to-top"
-      class="back-to-top"
-      onclick="scrollToTop()">
-      ↑
-    </button>
-
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-8">
-      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <p>© 2025 Raymart Reyes. All rights reserved. Built with passion and code ❤️</p>
+  <!-- Resume Modal -->
+  <div id="resume-modal" class="modal">
+    <div class="modal-content">
+      <button class="close-btn" onclick="closeResumeModal()">
+        ×
+      </button>
+      <div class="modal-header">
+        <h3 class="text-xl font-semibold text-gray-800">📄 Raymart Reyes - Resume</h3>
       </div>
-    </footer>
-    <!-- Link to external JavaScript file -->
-    <script src="js/email.min.js"></script>
-    <script>
-      (function(){
-        emailjs.init('AertDu1z7YX2AsmMG');
-      })();
-    </script>
-    <script src="js/script.js"></script>
-  </body>
+      <div class="modal-body">
+        <iframe id="pdf-viewer" class="pdf-viewer" src="assets/Raymart_Reyes_Resume.pdf" title="Raymart Reyes Resume">
+        </iframe>
+      </div>
+    </div>
+  </div>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" class="back-to-top" onclick="scrollToTop()">
+    ↑
+  </button>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-8">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <p>© 2025 Raymart Reyes. All rights reserved. Built with passion and code ❤️</p>
+    </div>
+  </footer>
+  <!-- Link to external JavaScript file -->
+  <script src="js/email.min.js"></script>
+  <script>
+    (function () {
+      emailjs.init('AertDu1z7YX2AsmMG');
+    })();
+  </script>
+  <script src="js/script.js"></script>
+</body>
+
 </html>

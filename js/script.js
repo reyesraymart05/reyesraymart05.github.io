@@ -130,15 +130,23 @@ function closeResumeModal() {
   document.body.style.overflow = "auto"; // Restore scrolling
 }
 
-function downloadResume() {
-  const pdfPath = "assets/Raymart_Reyes_Resume.pdf";
-  const link = document.createElement("a");
-  link.href = pdfPath;
-  link.download = "Raymart Reyes Resume.pdf"; // Change file name if you want
-  document.body.appendChild(link);
-  link.click();
-  document.body.removeChild(link);
-}
+document
+  .getElementById("downloadResume")
+  .addEventListener("click", function () {
+    fetch("assets/Raymart_Reyes_Resume.pdf")
+      .then((response) => response.blob())
+      .then((blob) => {
+        const url = window.URL.createObjectURL(blob);
+        const a = document.createElement("a");
+        a.href = url;
+        a.download = "Raymart_Reyes_Resume.pdf";
+        document.body.appendChild(a);
+        a.click();
+        a.remove();
+        window.URL.revokeObjectURL(url);
+      })
+      .catch(() => alert("Failed to download file."));
+  });
 
 // Close modal when clicking outside
 document.getElementById("resume-modal").addEventListener("click", function (e) {
