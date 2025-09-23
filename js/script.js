@@ -130,23 +130,21 @@ function closeResumeModal() {
   document.body.style.overflow = "auto"; // Restore scrolling
 }
 
-document
-  .getElementById("downloadResume")
-  .addEventListener("click", function () {
-    fetch("assets/Raymart_Reyes_Resume.pdf")
-      .then((response) => response.blob())
-      .then((blob) => {
-        const url = window.URL.createObjectURL(blob);
-        const a = document.createElement("a");
-        a.href = url;
-        a.download = "Raymart_Reyes_Resume.pdf";
-        document.body.appendChild(a);
-        a.click();
-        a.remove();
-        window.URL.revokeObjectURL(url);
-      })
-      .catch(() => alert("Failed to download file."));
-  });
+function downloadResume() {
+  fetch("assets/Raymart_Reyes_Resume.pdf")
+    .then((response) => response.blob())
+    .then((blob) => {
+      const url = window.URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = "Raymart_Reyes_Resume.pdf";
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      window.URL.revokeObjectURL(url);
+    })
+    .catch(() => alert("Failed to download file."));
+}
 
 // Close modal when clicking outside
 document.getElementById("resume-modal").addEventListener("click", function (e) {
